@@ -101,12 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
     bodyTag.style.overflow = '';
   }
 
+  // Direct page navigation to login.html for all login buttons
   loginBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      if (loginModal) {
-        e.preventDefault();
-        openModal();
-      }
+    btn.addEventListener('click', () => {
+      // Direct link navigation to login.html enabled across all pages
     });
   });
 
