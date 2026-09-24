@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Childcare & Daycare Center - Navbar & Footer Only</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       1. CSS Variables & Theme Setup (Light & Dark Mode)
+       ========================================================================== */
+    :root {
+      --primary: #FF6B6B;       /* Warm Coral Red */
+      --primary-hover: #EE5253;
+      --secondary: #48DBFB;     /* Playful Sky Blue */
+      --accent-yellow: #FECA57; /* Sun Yellow */
+      --accent-green: #1DD1A1;  /* Fresh Mint Green */
+
+      --bg-main: #FAFBFC;
+      --bg-card: #FFFFFF;
+      --bg-navbar: rgba(255, 255, 255, 0.95);
+      --bg-footer: #1E272C;
+      --bg-modal: #FFFFFF;
+      --bg-input: #F1F5F9;
+
+      --text-main: #2D3436;
+      --text-muted: #636E72;
+      --text-inverse: #FFFFFF;
+      --footer-text: #B2BEC3;
+      --footer-heading: #FFFFFF;
+
+      --border-color: #E2E8F0;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.15);
+
+      --font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.3s ease;
+    }
+
+    /* Dark Theme Variables */
+    [data-theme="dark"] {
+      --bg-main: #0F172A;
+      --bg-card: #1E293B;
+      --bg-navbar: rgba(30, 41, 59, 0.95);
+      --bg-footer: #0B1120;
+      --bg-modal: #1E293B;
+      --bg-input: #334155;
+
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-inverse: #0F172A;
+      --footer-text: #94A3B8;
+
+      --border-color: #334155;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    /* ==========================================================================
+       2. Reset & General Setup
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-family: var(--font-family);
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: background-color var(--transition-normal), color var(--transition-normal);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button, input {
+      font-family: inherit;
+      font-size: inherit;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ==========================================================================
+       3. Header & Navigation Bar
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--bg-navbar);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      transition: background-color var(--transition-normal), border-color var(--transition-normal);
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      gap: 20px;
+    }
+
+    /* Brand Logo (Navbar & Footer Identical Style) */
+    .brand-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .brand-logo .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--accent-yellow), var(--primary));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.3rem;
+      box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+    }
+
+    .brand-logo span strong {
+      color: var(--secondary);
+    }
+
+    /* Navigation Menu */
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      padding: 10px 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: var(--radius-sm);
+      transition: color var(--transition-fast);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary);
+    }
+
+    /* Dropdown Menu */
+    .dropdown-icon {
+      font-size: 0.75rem;
+      transition: transform var(--transition-fast);
+    }
+
+    .nav-item.dropdown:hover .dropdown-icon,
+    .nav-item.dropdown.open .dropdown-icon {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 180px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 8px 0;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity var(--transition-fast), transform var(--transition-fast), visibility var(--transition-fast);
+      z-index: 100;
+    }
+
+    .nav-item.dropdown:hover .dropdown-menu,
+    .nav-item.dropdown.open .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-item a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 18px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      transition: background-color var(--transition-fast), color var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .dropdown-item a:hover {
+      background-color: var(--bg-input);
+      color: var(--primary);
+    }
+
+    .dropdown-item a .badge {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      background-color: var(--accent-green);
+      color: #fff;
+      font-weight: 700;
+    }
+
+    /* Right Side Utilities */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: var(--bg-input);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: background-color var(--transition-fast), transform var(--transition-fast), color var(--transition-fast);
+      border: 1px solid var(--border-color);
+    }
+
+    .icon-btn:hover {
+      background-color: var(--primary);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .rtl-toggle-btn {
+      font-size: 0.85rem;
+      font-weight: 800;
+      width: auto;
+      padding: 0 14px;
+      border-radius: var(--radius-full);
+      gap: 6px;
+    }
+
+    .btn-login {
+      background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+      color: #ffffff;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .btn-login:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
+    }
+
+    .mobile-toggle {
+      display: none;
+      font-size: 1.4rem;
+      background: none;
+      color: var(--text-main);
+    }
+
+    /* ==========================================================================
+       4. RTL Layout Support
+       ========================================================================== */
+    [dir="rtl"] {
+      text-align: right;
+    }
+
+    [dir="rtl"] .dropdown-menu {
+      left: auto;
+      right: 0;
+    }
+
+    [dir="rtl"] .btn-login i,
+    [dir="rtl"] .dropdown-item a i,
+    [dir="rtl"] .footer-contact-item i {
+      transform: scaleX(-1);
+    }
+
+    /* ==========================================================================
+       5. Content Spacer (Between Navbar and Footer)
+       ========================================================================== */
+    .content-area {
+      flex: 1;
+      padding: 60px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      max-width: 600px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .content-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    .content-card p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    /* ==========================================================================
+       6. Footer Component
+       ========================================================================== */
+    .footer {
+      background-color: var(--bg-footer);
+      color: var(--footer-text);
+      padding-top: 60px;
+      border-top: 1px solid var(--border-color);
+      transition: background-color var(--transition-normal);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer-brand p {
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .social-link {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .social-link:hover {
+      background-color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .footer-column h4 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--footer-heading);
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .footer-column h4::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background-color: var(--primary);
+      border-radius: 2px;
+    }
+
+    [dir="rtl"] .footer-column h4::after {
+      left: auto;
+      right: 0;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a {
+      font-size: 0.92rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color var(--transition-fast), transform var(--transition-fast);
+      cursor: pointer;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+      transform: translateX(4px);
+    }
+
+    [dir="rtl"] .footer-links a:hover {
+      transform: translateX(-4px);
+    }
+
+    .footer-contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      font-size: 0.92rem;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .footer-contact-item i {
+      color: var(--primary);
+      margin-top: 4px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      margin-top: 16px;
+      border-radius: var(--radius-full);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .newsletter-form input {
+      padding: 10px 16px;
+      background-color: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      width: 100%;
+    }
+
+    .newsletter-form input::placeholder {
+      color: #94A3B8;
+    }
+
+    .newsletter-form button {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 0 18px;
+      font-weight: 700;
+      transition: background-color var(--transition-fast);
+    }
+
+    .newsletter-form button:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 24px 0;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    .footer-bottom p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .footer-bottom i.fa-heart {
+      color: var(--primary);
+    }
+
+    /* ==========================================================================
+       7. Login Modal
+       ========================================================================== */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity var(--transition-fast), visibility var(--transition-fast);
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-card {
+      background-color: var(--bg-modal);
+      width: 100%;
+      max-width: 440px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      transform: scale(0.9);
+      transition: transform var(--transition-fast);
+    }
+
+    .modal-overlay.active .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-header {
+      padding: 24px 24px 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .modal-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-close-modal {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--bg-input);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color var(--transition-fast), color var(--transition-fast);
+    }
+
+    .btn-close-modal:hover {
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    .modal-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border-color);
+      background-color: var(--bg-input);
+    }
+
+    .tab-btn {
+      flex: 1;
+      padding: 12px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      background: none;
+      transition: color var(--transition-fast), background-color var(--transition-fast);
+    }
+
+    .tab-btn.active {
+      color: var(--primary);
+      background-color: var(--bg-modal);
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .modal-body {
+      padding: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+
+    .input-with-icon {
+      position: relative;
+    }
+
+    .input-with-icon i {
+      position: absolute;
+      top: 50%;
+      left: 14px;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    [dir="rtl"] .input-with-icon i {
+      left: auto;
+      right: 14px;
+    }
+
+    .input-with-icon input {
+      width: 100%;
+      padding: 12px 14px 12px 42px;
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-input);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      transition: border-color var(--transition-fast);
+    }
+
+    [dir="rtl"] .input-with-icon input {
+      padding: 12px 42px 12px 14px;
+    }
+
+    .input-with-icon input:focus {
+      border-color: var(--primary);
+    }
+
+    .form-options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+    }
+
+    .form-options label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    .forgot-link {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .btn-submit-login {
+      width: 100%;
+      padding: 12px;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+      color: #fff;
+      font-weight: 800;
+      font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(255, 107, 107, 0.3);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .btn-submit-login:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255, 107, 107, 0.4);
+    }
+
+    /* ==========================================================================
+       8. Responsive Layout Adjustments
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-card);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 12px;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: var(--shadow-md);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all var(--transition-fast);
+      }
+
+      [dir="rtl"] .nav-menu {
+        left: auto;
+        right: 0;
+      }
+
+      .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .nav-item {
+        width: 100%;
+      }
+
+      .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding-left: 16px;
+        display: none;
+      }
+
+      [dir="rtl"] .dropdown-menu {
+        padding-left: 0;
+        padding-right: 16px;
+      }
+
+      .nav-item.dropdown.open .dropdown-menu {
+        display: block;
+      }
+
+      .mobile-toggle {
+        display: block;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .navbar {
+        height: 70px;
+      }
+
+      .nav-menu {
+        top: 70px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .nav-actions {
+        gap: 6px;
+      }
+
+      .rtl-toggle-btn span,
+      .btn-login span {
+        display: none;
+      }
+
+      .btn-login {
+        padding: 10px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span id="current-home-text">Home 1</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1" style="display:none;">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2" style="display:none;">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       BODY SECTION (Clean Placeholder Between Navbar and Footer)
+       ========================================================================== -->
+  <main class="content-area">
+    <div class="content-card">
+      <h2>Childcare Navbar & Footer Demo</h2>
+      <p id="view-status-text">Currently viewing <strong>Home 1</strong> selection from the dropdown menu.</p>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       INTERACTIVE LOGIN MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password-input">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-key"></i>
+              <input type="password" id="password-input" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox" checked> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">
+            Sign In Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTIVE JAVASCRIPT
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const htmlTag = document.documentElement;
+
+      // 1. Dark Mode Toggle
+      const themeToggleBtn = document.getElementById('theme-toggle-btn');
+      const savedTheme = localStorage.getItem('childcare_theme') || 'light';
+      applyTheme(savedTheme);
+
+      themeToggleBtn?.addEventListener('click', () => {
+        const currentTheme = htmlTag.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(nextTheme);
+      });
+
+      function applyTheme(theme) {
+        if (theme === 'dark') {
+          htmlTag.setAttribute('data-theme', 'dark');
+          themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+          themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
+        } else {
+          htmlTag.removeAttribute('data-theme');
+          themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+          themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
+        }
+        localStorage.setItem('childcare_theme', theme);
+      }
+
+      // 2. RTL Layout Toggle
+      const rtlToggleBtn = document.getElementById('rtl-toggle-btn');
+      const rtlLabel = document.getElementById('rtl-label');
+      const savedDir = localStorage.getItem('childcare_dir') || 'ltr';
+      applyDirection(savedDir);
+
+      rtlToggleBtn?.addEventListener('click', () => {
+        const currentDir = htmlTag.getAttribute('dir') || 'ltr';
+        const nextDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+        applyDirection(nextDir);
+      });
+
+      function applyDirection(dir) {
+        htmlTag.setAttribute('dir', dir);
+        if (dir === 'rtl') {
+          if (rtlLabel) rtlLabel.textContent = 'LTR';
+          rtlToggleBtn.setAttribute('title', 'Switch to LTR Mode');
+        } else {
+          if (rtlLabel) rtlLabel.textContent = 'RTL';
+          rtlToggleBtn.setAttribute('title', 'Switch to RTL Mode');
+        }
+        localStorage.setItem('childcare_dir', dir);
+      }
+
+      // 3. Home Dropdown Selection Handler
+      const selectHome1 = document.getElementById('select-home1');
+      const selectHome2 = document.getElementById('select-home2');
+      const currentHomeText = document.getElementById('current-home-text');
+      const badgeHome1 = document.getElementById('badge-home1');
+      const badgeHome2 = document.getElementById('badge-home2');
+      const viewStatusText = document.getElementById('view-status-text');
+      const footerLinkHome1 = document.getElementById('footer-link-home1');
+      const footerLinkHome2 = document.getElementById('footer-link-home2');
+
+      function setHome1() {
+        currentHomeText.textContent = 'Home 1';
+        badgeHome1.style.display = 'inline-block';
+        badgeHome2.style.display = 'none';
+        if (viewStatusText) viewStatusText.innerHTML = 'Currently viewing <strong>Home 1</strong> selection from the dropdown menu.';
+      }
+
+      function setHome2() {
+        currentHomeText.textContent = 'Home 2';
+        badgeHome1.style.display = 'none';
+        badgeHome2.style.display = 'inline-block';
+        if (viewStatusText) viewStatusText.innerHTML = 'Currently viewing <strong>Home 2</strong> selection from the dropdown menu.';
+      }
+
+      selectHome1?.addEventListener('click', setHome1);
+      selectHome2?.addEventListener('click', setHome2);
+      footerLinkHome1?.addEventListener('click', setHome1);
+      footerLinkHome2?.addEventListener('click', setHome2);
+
+      // 4. Interactive Login Modal Controller
+      const loginBtn = document.getElementById('login-btn');
+      const loginModal = document.getElementById('login-modal');
+      const closeModalBtn = document.getElementById('close-modal-btn');
+      const parentTab = document.getElementById('tab-parent');
+      const staffTab = document.getElementById('tab-staff');
+      const modalTabTitle = document.getElementById('modal-tab-title');
+
+      function openModal() {
+        loginModal?.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        loginModal?.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      loginBtn?.addEventListener('click', openModal);
+      closeModalBtn?.addEventListener('click', closeModal);
+
+      loginModal?.addEventListener('click', (e) => {
+        if (e.target === loginModal) closeModal();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && loginModal?.classList.contains('active')) {
+          closeModal();
+        }
+      });
+
+      parentTab?.addEventListener('click', () => {
+        parentTab.classList.add('active');
+        staffTab.classList.remove('active');
+        if (modalTabTitle) modalTabTitle.textContent = 'Parent Portal Login';
+      });
+
+      staffTab?.addEventListener('click', () => {
+        staffTab.classList.add('active');
+        parentTab.classList.remove('active');
+        if (modalTabTitle) modalTabTitle.textContent = 'Staff Portal Login';
+      });
+
+      // 5. Mobile Menu Toggle
+      const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+      const navMenu = document.getElementById('nav-menu');
+      const homeDropdown = document.getElementById('home-dropdown');
+
+      mobileToggleBtn?.addEventListener('click', () => {
+        navMenu?.classList.toggle('active');
+        const isExpanded = navMenu?.classList.contains('active');
+        mobileToggleBtn.innerHTML = isExpanded 
+          ? '<i class="fa-solid fa-xmark"></i>' 
+          : '<i class="fa-solid fa-bars"></i>';
+      });
+
+      homeDropdown?.querySelector('.dropdown-toggle')?.addEventListener('click', (e) => {
+        if (window.innerWidth <= 992) {
+          e.preventDefault();
+          homeDropdown.classList.toggle('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

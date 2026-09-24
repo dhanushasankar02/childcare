@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs & Age Continuum - LittleStars Childcare & Daycare Center</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span id="current-home-text">Home 1</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1" style="display:none;">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2" style="display:none;">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link active">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER - PROGRAMS.HTML 7 UNIQUE DESIGN SECTIONS
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: PROGRAM CONTINUUM HERO (#prog-hero) - UNIQUE BOLD GRADIENT HERO
+         ========================================================================== -->
+    <section class="prog-hero-section" id="prog-hero">
+      <div class="container">
+        <div class="prog-hero-grid">
+          <!-- Left Hero Text Content -->
+          <div class="prog-hero-text">
+            <div class="prog-hero-badge">
+              <i class="fa-solid fa-graduation-cap"></i> 5 Age-Specific Tracks (6 Wks - 12 Yrs)
+            </div>
+            <h1 class="prog-hero-title">
+              Tailored Early Education For Every <span>Milestone & Discovery</span>
+            </h1>
+            <p class="prog-hero-desc">
+              From soothing infant sensory nurseries to STEAM-powered pre-k classrooms and after-school robotics labs, our accredited programs build lifelong confidence and joy in learning.
+            </p>
+
+            <div class="prog-quick-chips">
+              <div class="prog-chip"><i class="fa-solid fa-baby"></i> Infant Care</div>
+              <div class="prog-chip"><i class="fa-solid fa-cubes"></i> Toddlers</div>
+              <div class="prog-chip"><i class="fa-solid fa-microscope"></i> Pre-K STEAM</div>
+              <div class="prog-chip"><i class="fa-solid fa-robot"></i> After-School</div>
+              <div class="prog-chip"><i class="fa-solid fa-sun"></i> Summer Camps</div>
+            </div>
+
+            <div class="prog-hero-actions">
+              <a href="contact.html" class="btn-primary">
+                Schedule a Private Tour <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Hero Curved Media Frame -->
+          <div class="prog-hero-media">
+            <div class="prog-hero-frame">
+              <img src="images/prog_hero_continuum.jpg" alt="Children of various ages engaging in learning classroom">
+              <div class="prog-badge-glowing">
+                <div class="prog-glowing-stat">
+                  <h4>1:3</h4>
+                  <p>Infant Ratio</p>
+                </div>
+                <div class="prog-glowing-stat">
+                  <h4>100%</h4>
+                  <p>Pre-K Ready</p>
+                </div>
+                <div class="prog-glowing-stat">
+                  <h4>Daily</h4>
+                  <p>App Sync</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: INFANT NURTURE SANCTUARY (#prog-infants) - OVAL FRAME & PASTEL CARDS
+         ========================================================================== -->
+    <section class="prog-infant-section" id="prog-infants">
+      <div class="container">
+        <div class="prog-infant-box">
+          <div class="section-header">
+            <span class="section-tag"><i class="fa-solid fa-baby"></i> 6 Weeks to 15 Months</span>
+            <h2 class="section-title">Gentle Infant Nurture & Sensory Oasis</h2>
+            <p class="section-desc">Building secure emotional attachments, individual sleeping schedules, and sensory exploration in a cozy nursery environment.</p>
+          </div>
+
+          <div class="prog-infant-split">
+            <!-- Oval Media Frame Left -->
+            <div class="prog-nursery-frame">
+              <img src="images/prog_infant_nurture.jpg" alt="Educator holding and nurturing a baby in soft daylight nursery">
+              <div class="prog-ratio-ring">
+                <strong>1:3</strong>
+                <span>Ratio</span>
+              </div>
+            </div>
+
+            <!-- Pastel Cards 2x2 Grid Right -->
+            <div class="prog-nursery-grid">
+              <div class="prog-nursery-card c-pink">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Secure Attachment</h3>
+                <p>Dedicated primary caregivers ensure lap cuddle time and gentle bonding moments.</p>
+              </div>
+
+              <div class="prog-nursery-card c-cyan">
+                <i class="fa-solid fa-music"></i>
+                <h3>Lullaby & Language</h3>
+                <p>Rhythmic acoustic melodies and early sign language to expand early vocalization.</p>
+              </div>
+
+              <div class="prog-nursery-card c-amber">
+                <i class="fa-solid fa-shapes"></i>
+                <h3>Tummy Time Play</h3>
+                <p>Tactile mirrors, soft floor mats, and wooden rattles strengthening motor balance.</p>
+              </div>
+
+              <div class="prog-nursery-card c-mint">
+                <i class="fa-solid fa-bottle-droplet"></i>
+                <h3>Private Nursing Suite</h3>
+                <p>Dedicated quiet rooms for mothers to nurse comfortably during daycare hours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: TODDLER EXPLORERS & MOTOR MASTERY (#prog-toddlers) - TOP CAP CARDS
+         ========================================================================== -->
+    <section class="prog-toddler-section" id="prog-toddlers">
+      <div class="container">
+        <div class="prog-toddler-top">
+          <div class="prog-toddler-text">
+            <span class="section-tag blue-tag"><i class="fa-solid fa-cubes"></i> 15 Months to 3 Years</span>
+            <h2>Toddler Explorers: Speech, Motor & Independence</h2>
+            <p>
+              Toddlers discover the world through active play and sensory motion. Our rooms feature soft climbing blocks, child-level book displays, and positive toilet training support.
+            </p>
+          </div>
+
+          <div class="prog-toddler-frame">
+            <img src="images/prog_toddler_explorers.jpg" alt="Toddlers playing on soft indoor climbing mats and building blocks">
+          </div>
+        </div>
+
+        <!-- 3 Milestone Cards Grid -->
+        <div class="prog-toddlers-cards">
+          <div class="prog-milestone-card card-blue">
+            <div class="prog-ms-head">
+              <div class="prog-ms-icon"><i class="fa-solid fa-comments"></i></div>
+              <span class="prog-ms-badge">Speech Track</span>
+            </div>
+            <h4>Vocabulary Explosion</h4>
+            <p>Interactive puppet stories and song circles expanding early vocabulary into full sentence structures.</p>
+            <div class="prog-mastery-tags">
+              <span class="prog-tag">Circle Time</span>
+              <span class="prog-tag">Picture Books</span>
+            </div>
+          </div>
+
+          <div class="prog-milestone-card card-amber">
+            <div class="prog-ms-head">
+              <div class="prog-ms-icon"><i class="fa-solid fa-restroom"></i></div>
+              <span class="prog-ms-badge">Routine Track</span>
+            </div>
+            <h4>Potty Training Partnership</h4>
+            <p>Patient, encouraging potty routines synchronized between parents and daycare teachers.</p>
+            <div class="prog-mastery-tags">
+              <span class="prog-tag">Gentle Guidance</span>
+              <span class="prog-tag">Daily Log</span>
+            </div>
+          </div>
+
+          <div class="prog-milestone-card card-green">
+            <div class="prog-ms-head">
+              <div class="prog-ms-icon"><i class="fa-solid fa-utensils"></i></div>
+              <span class="prog-ms-badge">Self-Care Track</span>
+            </div>
+            <h4>Self-Feeding Autonomy</h4>
+            <p>Ergonomic cutlery and small water pouring stations fostering mealtime independence.</p>
+            <div class="prog-mastery-tags">
+              <span class="prog-tag">Fine Motor</span>
+              <span class="prog-tag">Healthy Snacks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: PRESCHOOL STEAM & PRE-K ACADEMY (#prog-preschool) - DARK STEAM BOX
+         ========================================================================== -->
+    <section class="prog-preschool-section" id="prog-preschool">
+      <div class="container">
+        <div class="prog-steam-box">
+          <div class="prog-steam-grid">
+            <div class="prog-steam-text">
+              <span class="section-tag green-tag"><i class="fa-solid fa-microscope"></i> 3 Years to 5 Years</span>
+              <h2>Preschool STEAM & Pre-K Academy</h2>
+              <p>Our Pre-K academy turns curiosity into scientific discovery. Children don mini lab coats, explore hands-on color mixing, master early phonics, and solve group engineering puzzles.</p>
+
+              <div class="prog-steam-pillars">
+                <div class="prog-pillar-item">
+                  <i class="fa-solid fa-book-open-reader"></i>
+                  <div>
+                    <strong>Phonics & Literacy</strong>
+                    <span>Letter sounds & writing</span>
+                  </div>
+                </div>
+
+                <div class="prog-pillar-item">
+                  <i class="fa-solid fa-calculator"></i>
+                  <div>
+                    <strong>Math & Logic</strong>
+                    <span>Counters & geometry</span>
+                  </div>
+                </div>
+
+                <div class="prog-pillar-item">
+                  <i class="fa-solid fa-flask"></i>
+                  <div>
+                    <strong>Science Lab</strong>
+                    <span>Hands-on experiments</span>
+                  </div>
+                </div>
+
+                <div class="prog-pillar-item">
+                  <i class="fa-solid fa-palette"></i>
+                  <div>
+                    <strong>Creative Arts</strong>
+                    <span>Painting & sculpture</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="prog-steam-media">
+              <div class="prog-steam-frame">
+                <img src="images/prog_preschool_steam.jpg" alt="Preschool children in mini lab coats conducting color science experiment">
+                <div class="prog-steam-chip">
+                  <i class="fa-solid fa-award"></i> 100% Kindergarten Readiness Certified
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: AFTER-SCHOOL LEADERSHIP HUB (#prog-afterschool) - CARDS & SHUTTLE BANNER
+         ========================================================================== -->
+    <section class="prog-afterschool-section" id="prog-afterschool">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag purple-tag"><i class="fa-solid fa-robot"></i> 5 Years to 12 Years</span>
+          <h2 class="section-title">After-School Leadership & Robotics Hub</h2>
+          <p class="section-desc">An enriching lounge for elementary students providing free school pickup, quiet homework help, and interactive robotics clubs.</p>
+        </div>
+
+        <div class="prog-after-cards">
+          <div class="prog-club-card">
+            <div class="prog-club-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>LEGO Robotics & Coding</h3>
+            <p>Building motorized models, block coding logic, and entering friendly youth robotics challenges.</p>
+            <span class="prog-club-badge"><i class="fa-solid fa-bolt"></i> Tech Club</span>
+          </div>
+
+          <div class="prog-club-card">
+            <div class="prog-club-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>Guided Homework Lounge</h3>
+            <p>Quiet study stations staffed by certified tutors assisting with daily math, reading, and science projects.</p>
+            <span class="prog-club-badge"><i class="fa-solid fa-book"></i> Study Support</span>
+          </div>
+
+          <div class="prog-club-card">
+            <div class="prog-club-icon"><i class="fa-solid fa-masks-theater"></i></div>
+            <h3>Performing Arts & Culinary</h3>
+            <p>Drama skits, pottery sculpting, and young chef baking sessions that encourage artistic expression.</p>
+            <span class="prog-club-badge"><i class="fa-solid fa-paint-brush"></i> Creative Club</span>
+          </div>
+        </div>
+
+        <!-- Shuttle Transportation Banner -->
+        <div class="prog-shuttle-banner">
+          <div class="prog-shuttle-info">
+            <i class="fa-solid fa-bus-simple"></i>
+            <div>
+              <strong>Free Elementary School Shuttle Transportation</strong>
+              <span>Safe daily pickup from Sunshine Elementary, Oakwood School, and Early Town Primary.</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn-primary">Reserve Shuttle Seat</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: SEASONAL STEAM CAMPS (#prog-summer-camp) - 4-COL CARDS & QUEST BANNER
+         ========================================================================== -->
+    <section class="prog-camp-section" id="prog-summer-camp">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag green-tag"><i class="fa-solid fa-campground"></i> All Ages (Summer & Holidays)</span>
+          <h2 class="section-title">Seasonal STEAM Camps & Outdoor Expeditions</h2>
+          <p class="section-desc">Action-packed holiday and summer camp quests featuring splash park games, wildlife hikes, space launches, and theater shows.</p>
+        </div>
+
+        <div class="prog-camp-grid">
+          <div class="prog-camp-card">
+            <i class="fa-solid fa-water"></i>
+            <strong>Splash Water Park</strong>
+            <span>Cooling splash pad activities & water balloon games</span>
+          </div>
+
+          <div class="prog-camp-card">
+            <i class="fa-solid fa-compass"></i>
+            <strong>Wildlife Hikes</strong>
+            <span>Guided park expeditions & nature scavenger hunts</span>
+          </div>
+
+          <div class="prog-camp-card">
+            <i class="fa-solid fa-rocket"></i>
+            <strong>Space & Science Quest</strong>
+            <span>Model rocket launches & astronomy lab experiments</span>
+          </div>
+
+          <div class="prog-camp-card">
+            <i class="fa-solid fa-drum"></i>
+            <strong>Stage & Musical Showcase</strong>
+            <span>Weekly music performances for daycare parents</span>
+          </div>
+        </div>
+
+        <div class="prog-camp-banner">
+          <img src="images/prog_summer_camp.jpg" alt="Children splashing in outdoor summer camp water park under green trees">
+          <div class="prog-camp-tag">
+            <i class="fa-solid fa-sun"></i> Summer Camp 2026 Registration Open — Reserve Your Spot!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: INCLUSIVE CARE & THERAPY STUDIO (#prog-special-needs) - ASYMMETRICAL ROWS
+         ========================================================================== -->
+    <section class="prog-therapy-section" id="prog-special-needs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag purple-tag"><i class="fa-solid fa-hands-holding-heart"></i> Specialized Support</span>
+          <h2 class="section-title">Inclusive Care & Individualized Therapy Support</h2>
+          <p class="section-desc">On-site licensed speech and occupational therapy rooms providing customized developmental plans for neurodiverse learners.</p>
+        </div>
+
+        <div class="prog-therapy-split">
+          <div class="prog-therapy-media">
+            <div class="prog-therapy-frame">
+              <img src="images/prog_special_needs.jpg" alt="Pediatric occupational therapist helping young child on balance sensory mat">
+            </div>
+          </div>
+
+          <div class="prog-therapy-list">
+            <div class="prog-therapy-row">
+              <i class="fa-solid fa-comment-dots"></i>
+              <div>
+                <h3>On-Site Speech Therapy</h3>
+                <p>Individualized articulation, sound production, and expressive vocabulary sessions with certified speech-language pathologists.</p>
+              </div>
+            </div>
+
+            <div class="prog-therapy-row">
+              <i class="fa-solid fa-child-reaching"></i>
+              <div>
+                <h3>Occupational & Motor Rehab</h3>
+                <p>Sensory balance mats, swings, and tactile boards that enhance gross and fine motor coordination.</p>
+              </div>
+            </div>
+
+            <div class="prog-therapy-row">
+              <i class="fa-solid fa-brain"></i>
+              <div>
+                <h3>Sensory Decompression Pods</h3>
+                <p>Quiet, soothing sensory rooms equipped with weighted blankets and dim lighting for calming reflection.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL COMPONENT
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Script -->
+  <script src="script.js"></script>
+</body>
+</html>

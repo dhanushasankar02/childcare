@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - LittleStars Childcare & Daycare Center</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span id="current-home-text">Home 1</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1" style="display:none;">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2" style="display:none;">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER - ABOUT.HTML 7 UNIQUE SECTIONS WITH UNIQUE IMAGES
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: OUR FOUNDING VISION & LEGACY (#abt-hero) - SPLIT HERO LAYOUT
+         ========================================================================== -->
+    <section class="abt-hero-section" id="abt-hero">
+      <div class="abt-hero-overlay"></div>
+      <div class="container abt-hero-container">
+        <div class="abt-hero-grid">
+          <!-- Left Hero Content -->
+          <div class="abt-hero-text">
+            <div class="abt-hero-badge">
+              <i class="fa-solid fa-heart-pulse"></i> Our Story & Legacy Since 2014
+            </div>
+            <h1 class="abt-hero-title">
+              Nurturing Tomorrow's Leaders With <span>Love, Purpose & Discovery</span>
+            </h1>
+            <p class="abt-hero-desc">
+              Founded over 12 years ago by early childhood researchers, LittleStars was built on a simple promise: to create a safe, inspiring haven where children feel cherished, confident, and eager to explore the world.
+            </p>
+            <div class="abt-hero-actions">
+              <a href="contact.html" class="btn-primary">
+                Book a Family Tour <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#abt-philosophy" class="btn-secondary">
+                <i class="fa-solid fa-compass"></i> Our 5 Pillars
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Floating Stats Card Grid -->
+          <div class="abt-hero-card-box">
+            <div class="abt-hero-stats-card">
+              <h3><i class="fa-solid fa-award"></i> Legacy at a Glance</h3>
+              <div class="abt-hero-stats-grid">
+                <div class="abt-stat-box">
+                  <h4>12+</h4>
+                  <p>Years Caring</p>
+                </div>
+                <div class="abt-stat-box">
+                  <h4>1,200+</h4>
+                  <p>Graduates</p>
+                </div>
+                <div class="abt-stat-box">
+                  <h4>100%</h4>
+                  <p>Certified Team</p>
+                </div>
+                <div class="abt-stat-box">
+                  <h4>15:1</h4>
+                  <p>Child Ratio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: THE 5 GUIDING CHILD-LED PILLARS (#abt-philosophy) - SPLIT GRID LAYOUT
+         ========================================================================== -->
+    <section class="abt-philosophy-section" id="abt-philosophy">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-compass"></i> Our Core Philosophy</span>
+          <h2 class="section-title">5 Guiding Pillars of Child-Led Growth</h2>
+          <p class="section-desc">We blend emotional security with cognitive STEAM inquiry to support every aspect of your child's early development.</p>
+        </div>
+
+        <div class="abt-philosophy-split">
+          <!-- Featured Image Frame Left -->
+          <div class="abt-philo-media">
+            <div class="abt-philo-frame">
+              <img src="images/about_child_philosophy.jpg" alt="Child-led growth philosophy and inquiry learning">
+              <div class="abt-philo-tag">
+                <i class="fa-solid fa-graduation-cap"></i> Child-Centered Inquiry & Emotional Care
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 Pillars Grid Right -->
+          <div class="abt-pillars-grid">
+            <!-- Pillar 1 -->
+            <div class="abt-pillar-card p-red">
+              <div class="abt-p-num">01</div>
+              <div class="abt-p-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+              <h3>Emotional Security</h3>
+              <p>Creating warm bonds between educators and children to build self-worth and resilience.</p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="abt-pillar-card p-blue">
+              <div class="abt-p-num">02</div>
+              <div class="abt-p-icon"><i class="fa-solid fa-atom"></i></div>
+              <h3>Play-Based STEAM</h3>
+              <p>Hands-on building blocks, physics play, and creative art that spark natural curiosity.</p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="abt-pillar-card p-yellow">
+              <div class="abt-p-num">03</div>
+              <div class="abt-p-icon"><i class="fa-solid fa-child"></i></div>
+              <h3>Physical Movement</h3>
+              <p>Indoor obstacle courses and daily outdoor play to strengthen gross motor coordination.</p>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="abt-pillar-card p-green">
+              <div class="abt-p-num">04</div>
+              <div class="abt-p-icon"><i class="fa-solid fa-users"></i></div>
+              <h3>Social Empathy</h3>
+              <p>Teaching kindness, active listening, and conflict resolution through collaborative circle time.</p>
+            </div>
+
+            <!-- Pillar 5 (Full Span) -->
+            <div class="abt-pillar-card p-purple full-span">
+              <div class="abt-p-num">05</div>
+              <div class="abt-p-icon"><i class="fa-solid fa-tree"></i></div>
+              <div class="abt-p-content">
+                <h3>Eco-Forest Connection</h3>
+                <p>Daily garden planting and outdoor exploration to nurture respect for nature.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: BIOPHILIC CAMPUS ARCHITECTURE (#abt-architecture) - SPLIT STORY & 3-COL PERKS
+         ========================================================================== -->
+    <section class="abt-arch-section" id="abt-architecture">
+      <div class="container">
+        <!-- Top Split: Story Text Left, Photo Frame Right -->
+        <div class="abt-arch-top-split">
+          <div class="abt-arch-text">
+            <span class="section-tag blue-tag"><i class="fa-solid fa-building"></i> Safe Architecture</span>
+            <h2>Biophilic Design Built for Safety & Natural Sunlight</h2>
+            <p>
+              Our campus was custom-designed by award-winning architects featuring floor-to-ceiling double-glazed windows, organic timber furniture, and non-toxic wall finishes to optimize air quality and natural daylight.
+            </p>
+          </div>
+
+          <div class="abt-arch-media">
+            <div class="abt-compact-frame">
+              <img src="images/about_facility_architecture.jpg" alt="Modern bright daycare facility architecture with sunlit windows">
+              <div class="abt-frame-badge">
+                <i class="fa-solid fa-sun"></i> 100% Natural Daylight Architecture
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom: 3 Perks 3-Column Grid -->
+        <div class="abt-arch-perks-grid 3-col">
+          <div class="abt-perk-card p-blue">
+            <div class="abt-perk-icon"><i class="fa-solid fa-wind"></i></div>
+            <h4>Medical-Grade HEPA Air Filtration</h4>
+            <p>Continuous air purification filtering 99.97% of airborne particles every 15 minutes.</p>
+          </div>
+
+          <div class="abt-perk-card p-cyan">
+            <div class="abt-perk-icon"><i class="fa-solid fa-fingerprint"></i></div>
+            <h4>Biometric Access & Security</h4>
+            <p>Encrypted facial recognition entry, 24/7 CCTV monitoring, and panic alarm systems.</p>
+          </div>
+
+          <div class="abt-perk-card p-green">
+            <div class="abt-perk-icon"><i class="fa-solid fa-shield"></i></div>
+            <h4>Padded Corner Safety Zones</h4>
+            <p>Impact-absorbing natural cork flooring and rounded furniture edges in all playrooms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: FARM-TO-TABLE ORGANIC NUTRITION (#abt-nutrition) - TEXT LEFT, MEDIA RIGHT
+         ========================================================================== -->
+    <section class="abt-nutrition-section" id="abt-nutrition">
+      <div class="container">
+        <div class="abt-nutrition-box">
+          <div class="abt-nutrition-grid">
+            <!-- Left Content -->
+            <div class="abt-nutri-text">
+              <span class="section-tag"><i class="fa-solid fa-apple-whole"></i> Culinary Studio</span>
+              <h2>Chef-Prepared Organic Meals & Allergy Safety</h2>
+              <p>Proper nutrition fuels growing brains. Our full-time chef prepares 3 warm, organic meals daily using fresh produce harvested directly from our daycare garden.</p>
+
+              <div class="abt-meal-specs">
+                <div class="abt-meal-pill">
+                  <i class="fa-solid fa-check-double"></i> 100% Nut-Free & Allergy Safe Kitchen
+                </div>
+                <div class="abt-meal-pill">
+                  <i class="fa-solid fa-seedling"></i> Organic Dairy, Grain & Produce
+                </div>
+                <div class="abt-meal-pill">
+                  <i class="fa-solid fa-droplet"></i> Filtered Alkaline Water Stations
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Photo Frame -->
+            <div class="abt-nutri-media">
+              <div class="abt-nutri-frame">
+                <img src="images/about_nutrition_kitchen.jpg" alt="Chef serving organic meals to toddlers at daycare dining table">
+                <div class="abt-nutri-chip">
+                  <i class="fa-solid fa-utensils"></i> On-Site Executive Chef Kitchen
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: GLOBAL DIVERSITY & INCLUSION (#abt-inclusion) - RICH SPLIT GRID LAYOUT
+         ========================================================================== -->
+    <section class="abt-inclusion-section" id="abt-inclusion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag purple-tag"><i class="fa-solid fa-globe"></i> Global Inclusion</span>
+          <h2 class="section-title">Celebrating Every Culture & Neurodiverse Needs</h2>
+          <p class="section-desc">We foster a welcoming, inclusive community where every child's heritage and individual learning style are honored.</p>
+        </div>
+
+        <div class="abt-inclusion-split">
+          <!-- Featured Image Frame Left -->
+          <div class="abt-inc-media">
+            <div class="abt-inc-frame">
+              <img src="images/about_diversity_inclusion.jpg" alt="Diverse children participating in global cultural learning">
+              <div class="abt-inc-tag">
+                <i class="fa-solid fa-heart"></i> Multi-Cultural & Inclusive Learning Space
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards Right -->
+          <div class="abt-inclusion-list">
+            <!-- Card 1 -->
+            <div class="abt-inc-card-row p-purple">
+              <div class="abt-inc-icon"><i class="fa-solid fa-language"></i></div>
+              <div class="abt-inc-body">
+                <div class="abt-inc-header">
+                  <h3>Multilingual Storytelling</h3>
+                  <span class="inc-chip">4 Languages</span>
+                </div>
+                <p>Daily picture books in English, Spanish, Mandarin, and Sign Language to expand early linguistic abilities.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="abt-inc-card-row p-blue">
+              <div class="abt-inc-icon"><i class="fa-solid fa-feather"></i></div>
+              <div class="abt-inc-body">
+                <div class="abt-inc-header">
+                  <h3>Neurodiverse Sensory Pods</h3>
+                  <span class="inc-chip">Calming Zone</span>
+                </div>
+                <p>Quiet, soothing sensory rooms equipped with weighted blankets and dim lighting for children needing calm reflection.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="abt-inc-card-row p-yellow">
+              <div class="abt-inc-icon"><i class="fa-solid fa-earth-americas"></i></div>
+              <div class="abt-inc-body">
+                <div class="abt-inc-header">
+                  <h3>Global Cultural Festivals</h3>
+                  <span class="inc-chip">Monthly Events</span>
+                </div>
+                <p>Monthly celebrations featuring traditional music, storytelling, and international cuisines shared by daycare families.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: ZERO-WASTE & SOLAR SUSTAINABILITY (#abt-sustainability)
+         ========================================================================== -->
+    <section class="abt-sust-section" id="abt-sustainability">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag green-tag"><i class="fa-solid fa-leaf"></i> Sustainability Pledge</span>
+          <h2 class="section-title">Our Commitment to a Greener Future for Our Children</h2>
+          <p class="section-desc">We teach environmental stewardship by operating a zero-plastic, solar-powered campus.</p>
+        </div>
+
+        <!-- Eco Ribbon Cards Grid (Outside Banner Container) -->
+        <div class="abt-sust-ribbon 4-col">
+          <div class="abt-sust-item">
+            <i class="fa-solid fa-solar-panel"></i>
+            <div>
+              <strong>100% Solar Powered</strong>
+              <span>Rooftop Photovoltaic Energy</span>
+            </div>
+          </div>
+
+          <div class="abt-sust-item">
+            <i class="fa-solid fa-recycle"></i>
+            <div>
+              <strong>Zero Single-Use Plastic</strong>
+              <span>Stainless Steel & Glass</span>
+            </div>
+          </div>
+
+          <div class="abt-sust-item">
+            <i class="fa-solid fa-cloud-rain"></i>
+            <div>
+              <strong>Rainwater Harvesting</strong>
+              <span>10,000L Recycling for Garden</span>
+            </div>
+          </div>
+
+          <div class="abt-sust-item">
+            <i class="fa-solid fa-shirt"></i>
+            <div>
+              <strong>Organic Eco Apparel</strong>
+              <span>100% GOTS Cotton Fabrics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Bottom Media Banner -->
+        <div class="abt-sust-banner">
+          <div class="abt-sust-frame">
+            <img src="images/about_sustainability_pledge.jpg" alt="Solar powered eco-friendly daycare garden and green campus">
+            <div class="abt-sust-tag">
+              <i class="fa-solid fa-solar-panel"></i> 100% Renewable Solar Powered Campus
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: PARENT PARTNERSHIP & ADVISORY (#abt-community)
+         ========================================================================== -->
+    <section class="abt-community-section" id="abt-community">
+      <div class="container">
+        <div class="abt-community-box">
+          <div class="abt-community-grid">
+            <!-- Left Content & CTA -->
+            <div class="abt-comm-text">
+              <span class="section-tag"><i class="fa-solid fa-handshake"></i> Parent Community</span>
+              <h2>A True Partnership Between Home & Daycare</h2>
+              <p>We view parents as essential co-educators. Through monthly workshops, weekend family picnics, and daily digital communication, we build a supportive village around your child.</p>
+
+              <div class="abt-comm-cta">
+                <a href="contact.html" class="btn-primary">
+                  Book a Family Campus Tour <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="home2.html" class="btn-secondary">
+                  <i class="fa-solid fa-cloud-sun"></i> Explore Home 2 (STEAM)
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Media Frame with Floating Parent Badge -->
+            <div class="abt-comm-media">
+              <div class="abt-comm-frame">
+                <img src="images/about_parent_partnership.jpg" alt="Parents and educators conversing warmly during daycare event">
+                <div class="abt-comm-tag">
+                  <i class="fa-solid fa-heart"></i> Active Parent Advisory Board
+                </div>
+                <div class="abt-comm-floating-badge">
+                  <i class="fa-solid fa-star"></i>
+                  <div>
+                    <strong>4.9 / 5 Rating</strong>
+                    <span>From 250+ Verified Families</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL COMPONENT (EXACT MATCH)
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuition & All-Inclusive Pricing - LittleStars Childcare Center</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span id="current-home-text">Home 1</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1" style="display:none;">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2" style="display:none;">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link active">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER - PRICING.HTML 7 UNIQUE DESIGN SECTIONS
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: ALL-INCLUSIVE TUITION HERO (#price-hero)
+         ========================================================================== -->
+    <section class="price-hero-section" id="price-hero">
+      <div class="container">
+        <div class="price-hero-grid">
+          <div class="price-hero-text">
+            <div class="price-hero-badge">
+              <i class="fa-solid fa-receipt"></i> Transparent & All-Inclusive Tuition
+            </div>
+            <h1 class="price-hero-title">
+              Investment in Your Child's <span>Future & Happiness</span>
+            </h1>
+            <p class="price-hero-desc">
+              We believe quality early childhood education should be transparent and predictable. Our all-inclusive tuition covers chef-prepared organic meals, diapers, STEAM supplies, and parent app access.
+            </p>
+
+            <div class="price-value-pills">
+              <div class="price-pill"><i class="fa-solid fa-circle-check"></i> Zero Hidden Registration Fees</div>
+              <div class="price-pill"><i class="fa-solid fa-circle-check"></i> Organic Chef Meals Included</div>
+              <div class="price-pill"><i class="fa-solid fa-circle-check"></i> Sibling Discount (15%)</div>
+              <div class="price-pill"><i class="fa-solid fa-circle-check"></i> State Vouchers Accepted</div>
+            </div>
+
+            <div class="price-hero-actions">
+              <a href="#price-plans" class="btn-primary">
+                Explore Tuition Plans <i class="fa-solid fa-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="price-hero-media">
+            <div class="price-hero-frame">
+              <img src="images/price_hero_tuition.jpg" alt="Parents meeting daycare director at reception desk discussing tuition plans">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: TUITION TIERS & ENROLLMENT PLANS (#price-plans)
+         ========================================================================== -->
+    <section class="price-plans-section" id="price-plans">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Enrollment Tiers</span>
+          <h2 class="section-title">Transparent Full-Time & Part-Time Plans</h2>
+          <p class="section-desc">Choose the enrollment schedule that best fits your family's routine. All rates are all-inclusive.</p>
+        </div>
+
+        <div class="price-plans-grid">
+          <!-- Tier 1: Infant Nest -->
+          <div class="price-card">
+            <div class="price-card-head">
+              <h3>Infant Sanctuary</h3>
+              <span class="age-tag">6 Weeks – 15 Months</span>
+              <div class="price-amount">$340 <span>/ week</span></div>
+              <p style="font-size:0.85rem; color:var(--text-muted);">1:3 Care Ratio • Individualized Naps</p>
+            </div>
+            <div class="price-features">
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Primary Caregiver Bonding</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Hypoallergenic Diapers & Wipes</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Private Nursing Lounge Access</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Real-Time Daily App Updates</div>
+            </div>
+            <a href="contact.html" class="btn-secondary" style="width:100%; text-align:center;">Enroll Infant</a>
+          </div>
+
+          <!-- Tier 2: Toddler Explorers (Featured) -->
+          <div class="price-card featured">
+            <div class="price-ribbon">Popular</div>
+            <div class="price-card-head">
+              <h3>Toddler Explorers</h3>
+              <span class="age-tag">15 Months – 3 Years</span>
+              <div class="price-amount">$310 <span>/ week</span></div>
+              <p style="font-size:0.85rem; color:var(--text-muted);">1:4 Care Ratio • Potty Training Support</p>
+            </div>
+            <div class="price-features">
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Organic Chef Breakfast & Lunch</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Potty Training Partnership</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Indoor Soft Gym & Motor Park</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Sensory Art & Music Circles</div>
+            </div>
+            <a href="contact.html" class="btn-primary" style="width:100%; text-align:center;">Enroll Toddler</a>
+          </div>
+
+          <!-- Tier 3: Preschool Pre-K -->
+          <div class="price-card">
+            <div class="price-card-head">
+              <h3>Preschool Pre-K</h3>
+              <span class="age-tag">3 Years – 5 Years</span>
+              <div class="price-amount">$285 <span>/ week</span></div>
+              <p style="font-size:0.85rem; color:var(--text-muted);">1:8 Care Ratio • 100% Pre-K Certified</p>
+            </div>
+            <div class="price-features">
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Hands-on STEAM Science Lab</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Phonics & Math Manipulatives</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Field Trips & Nature Hikes</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Kindergarten Readiness Evaluation</div>
+            </div>
+            <a href="contact.html" class="btn-secondary" style="width:100%; text-align:center;">Enroll Preschool</a>
+          </div>
+
+          <!-- Tier 4: After-School Club -->
+          <div class="price-card">
+            <div class="price-card-head">
+              <h3>After-School Club</h3>
+              <span class="age-tag">5 Years – 12 Years</span>
+              <div class="price-amount">$165 <span>/ week</span></div>
+              <p style="font-size:0.85rem; color:var(--text-muted);">1:10 Care Ratio • Free School Pickup</p>
+            </div>
+            <div class="price-features">
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Daily Elementary Bus Shuttle</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Guided Homework Study Lounge</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> LEGO Robotics & Coding Lab</div>
+              <div class="price-feature-item"><i class="fa-solid fa-check"></i> Afternoon Chef Snack Platter</div>
+            </div>
+            <a href="contact.html" class="btn-secondary" style="width:100%; text-align:center;">Enroll After-School</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: THE ALL-INCLUSIVE VALUE GUARANTEE (#price-inclusive) - CARD-FREE FLUID SPLIT
+         ========================================================================== -->
+    <section class="price-inclusive-section" id="price-inclusive">
+      <div class="container">
+        <div class="price-inclusive-open-grid">
+          <!-- Left Open Fluid Text Column -->
+          <div class="price-inclusive-text-col">
+            <span class="section-tag green-tag"><i class="fa-solid fa-shield-halved"></i> 100% Transparent Value</span>
+            <h2 class="price-open-title">The All-Inclusive Guarantee: <span class="gradient-text">No Surprise Extra Fees</span></h2>
+            <p class="price-open-desc">Unlike traditional daycares that bill separately for meals, art supplies, or app subscriptions, our flat weekly tuition rate covers everything your child needs for a healthy, enriching day.</p>
+
+            <!-- Card-Free Open Feature Rows -->
+            <div class="price-open-feature-list">
+              <div class="price-open-feature-row">
+                <div class="price-open-icon p-ic-coral">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="price-open-text">
+                  <h4>3 Organic Chef Meals Daily</h4>
+                  <p>Hot breakfast, organic balanced lunch, and afternoon wholesome snacks prepared fresh on-site every day by our full-time chef.</p>
+                </div>
+              </div>
+
+              <div class="price-open-feature-row">
+                <div class="price-open-icon p-ic-blue">
+                  <i class="fa-solid fa-baby"></i>
+                </div>
+                <div class="price-open-text">
+                  <h4>Hypoallergenic Diapers & Wipes</h4>
+                  <p>Premium eco-friendly, dermatologically-tested diapering supplies and wipes provided—no need to pack daily supply bags.</p>
+                </div>
+              </div>
+
+              <div class="price-open-feature-row">
+                <div class="price-open-icon p-ic-yellow">
+                  <i class="fa-solid fa-flask"></i>
+                </div>
+                <div class="price-open-text">
+                  <h4>STEAM & Art Materials</h4>
+                  <p>Robotics equipment, science lab materials, canvas paints, sensory play kits, and musical instruments are all included.</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <!-- Right Open Media Showcase with Floating Badges -->
+          <div class="price-inclusive-media-col">
+            <div class="price-inclusive-image-wrapper">
+              <img src="images/price_inclusive_amenities.jpg" alt="Toddler playing with wooden blocks in bright daycare room">
+              
+              <!-- Floating Pill Top Left -->
+              <div class="price-float-pill pill-top">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>No Surprise Bills</strong>
+                  <span>Flat Rate Guarantee</span>
+                </div>
+              </div>
+
+              <!-- Floating Pill Bottom Right -->
+              <div class="price-float-pill pill-bottom">
+                <i class="fa-solid fa-sparkles"></i>
+                <div>
+                  <strong>100% Covered</strong>
+                  <span>Meals, Supplies & App Access</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: SIBLING & CORPORATE DISCOUNTS (#price-discounts)
+         ========================================================================== -->
+    <section class="price-discounts-section" id="price-discounts">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-piggy-bank"></i> Family Savings</span>
+          <h2 class="section-title">Sibling & Corporate Savings Programs</h2>
+          <p class="section-desc">We make quality care affordable for growing families through multi-child discounts and corporate benefits.</p>
+        </div>
+
+        <div class="price-discounts-grid">
+          <div class="price-discount-card">
+            <span class="price-discount-tag">15% OFF</span>
+            <h3>Second Child Discount</h3>
+            <p>Enroll a second sibling and receive an automatic 15% discount applied to the lower tuition rate every month.</p>
+          </div>
+
+          <div class="price-discount-card">
+            <span class="price-discount-tag">20% OFF</span>
+            <h3>Third Child Discount</h3>
+            <p>Families enrolling three or more children receive 20% off for the third and subsequent siblings.</p>
+          </div>
+
+          <div class="price-discount-card">
+            <span class="price-discount-tag">10% OFF</span>
+            <h3>Corporate & Military Subsidy</h3>
+            <p>Partnered corporate employee benefit matching and 10% discount for active military and first responders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: STATE SUBSIDIES & FINANCIAL AID (#price-subsidies)
+         ========================================================================== -->
+    <section class="price-subsidies-section" id="price-subsidies">
+      <div class="container">
+        <div class="price-subsidies-box">
+          <div class="section-header">
+            <span class="section-tag purple-tag"><i class="fa-solid fa-handshake-angle"></i> Financial Aid</span>
+            <h2 class="section-title">State Childcare Subsidies Accepted</h2>
+            <p class="section-desc">We work directly with state assistance programs to make accredited daycare accessible to all families.</p>
+          </div>
+
+          <div class="price-subsidies-split">
+            <div class="price-subsidies-frame">
+              <img src="images/price_state_subsidies.jpg" alt="Diverse children participating in inclusive learning environment">
+            </div>
+
+            <div class="price-subsidies-body">
+              <div class="price-subsidies-list">
+                <div class="price-subsidy-item">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <div>
+                    <strong>State Childcare Assistance Vouchers</strong>
+                    <span>We process direct state voucher payments to lower monthly out-of-pocket costs.</span>
+                  </div>
+                </div>
+
+                <div class="price-subsidy-item">
+                  <i class="fa-solid fa-sliders"></i>
+                  <div>
+                    <strong>Sliding Scale Assistance Grants</strong>
+                    <span>Needs-based tuition assistance grants for qualifying early learning families.</span>
+                  </div>
+                </div>
+
+                <div class="price-subsidy-item">
+                  <i class="fa-solid fa-calculator"></i>
+                  <div>
+                    <strong>Tax Credit Form 2441 Receipting</strong>
+                    <span>Year-end annual tuition statements formatted for federal Child & Dependent Care Tax Credits.</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html" class="btn-primary">Speak With Financial Aid Counselor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: INTERACTIVE TUITION ESTIMATOR (#price-calculator)
+         ========================================================================== -->
+    <section class="price-calc-section" id="price-calculator">
+      <div class="container">
+        <div class="price-calc-box">
+          <div class="price-calc-split">
+            <div class="price-calc-left">
+              <span class="section-tag blue-tag"><i class="fa-solid fa-calculator"></i> Rate Estimator</span>
+              <h2>Interactive Tuition Estimator</h2>
+              <p>Select your child's age group and desired weekly schedule to preview your estimated monthly rate.</p>
+
+              <div class="price-calc-form">
+                <div class="calc-group">
+                  <label>Select Age Group:</label>
+                  <div class="calc-options">
+                    <button class="calc-opt-btn active" onclick="updateEstimate(340, this)">Infant (6w-15m)</button>
+                    <button class="calc-opt-btn" onclick="updateEstimate(310, this)">Toddler (15m-3y)</button>
+                    <button class="calc-opt-btn" onclick="updateEstimate(285, this)">Pre-K (3y-5y)</button>
+                    <button class="calc-opt-btn" onclick="updateEstimate(165, this)">After-School</button>
+                  </div>
+                </div>
+
+                <div class="calc-group">
+                  <label>Select Weekly Schedule:</label>
+                  <div class="calc-options">
+                    <button class="calc-opt-btn active">5 Days / Week (Full Time)</button>
+                    <button class="calc-opt-btn">3 Days / Week (Part Time)</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-estimate-card">
+              <h4>Estimated Monthly Investment</h4>
+              <div class="price-estimate-amount" id="est-amount">$1,360 <span>/ month</span></div>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:20px;">Covers all organic meals, diapers, STEAM supplies & parent app.</p>
+              <a href="contact.html" class="btn-primary" style="width:100%; text-align:center;">Request Tour & Lock Rate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: TUITION FAQ ACCORDION (#price-faq)
+         ========================================================================== -->
+    <section class="price-faq-section" id="price-faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Tuition FAQ</span>
+          <h2 class="section-title">Frequently Asked Financial Questions</h2>
+          <p class="section-desc">Clear answers regarding payment schedules, deposits, and vacation policies.</p>
+        </div>
+
+        <div class="price-faq-split">
+          <div class="price-faq-list">
+            <div class="price-faq-item">
+              <h4><i class="fa-solid fa-circle-info"></i> How does billing work?</h4>
+              <p>Tuition is billed on an automated weekly or monthly schedule via secure ACH transfer or credit card on the 1st of each period.</p>
+            </div>
+
+            <div class="price-faq-item">
+              <h4><i class="fa-solid fa-circle-info"></i> Is there a vacation credit policy?</h4>
+              <p>Yes! Every enrolled family receives 2 weeks of 50% tuition credit per year for planned family vacation time.</p>
+            </div>
+
+            <div class="price-faq-item">
+              <h4><i class="fa-solid fa-circle-info"></i> What is required to reserve a spot?</h4>
+              <p>A $150 deposit holds your child's spot, which is credited directly toward your first week of tuition upon enrollment.</p>
+            </div>
+
+
+          </div>
+
+          <div class="price-faq-media">
+            <div class="price-faq-frame">
+              <img src="images/price_faq_support.jpg" alt="Parent smiling warmly during daycare tour consultation">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL COMPONENT
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Script -->
+  <script src="script.js"></script>
+  <script>
+    function updateEstimate(weeklyRate, btn) {
+      const btns = btn.parentElement.querySelectorAll('.calc-opt-btn');
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const monthly = weeklyRate * 4;
+      document.getElementById('est-amount').innerHTML = '$' + monthly.toLocaleString() + ' <span>/ month</span>';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Learning Philosophy - LittleStars Childcare & Daycare Center</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span id="current-home-text">Home 1</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1" style="display:none;">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2" style="display:none;">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link active">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER - PHILOSOPHY.HTML 7 UNIQUE SECTIONS
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: HYBRID MONTESSORI & REGGIO HERO (#philo-hero)
+         IMAGE 1: images/philo_montessori_reggio.jpg
+         ========================================================================== -->
+    <section class="philo-hero-section" id="philo-hero">
+      <div class="philo-hero-overlay"></div>
+      <div class="container philo-hero-container">
+        <div class="philo-hero-content">
+          <div class="philo-hero-badge">
+            <i class="fa-solid fa-graduation-cap"></i> Early Learning Pedagogy & Philosophy
+          </div>
+          <h1 class="philo-hero-title">
+            The Science & Art Of <span>Child-Centered Discovery</span>
+          </h1>
+          <p class="philo-hero-desc">
+            Our educational philosophy seamlessly weaves Montessori self-directed exploration, Reggio Emilia environmental inspiration, and modern developmental neuroscience into an empowering environment for young minds.
+          </p>
+          <div class="philo-pills-row">
+            <div class="philo-pill-item">
+              <i class="fa-solid fa-compass"></i> Child-Led Self Direction
+            </div>
+            <div class="philo-pill-item">
+              <i class="fa-solid fa-brain"></i> Synaptic Brain Wiring
+            </div>
+            <div class="philo-pill-item">
+              <i class="fa-solid fa-palette"></i> 100 Expressive Languages
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: EARLY BRAIN WIRING & NEURAL GROWTH (#philo-neuroscience)
+         IMAGE 2: images/philo_neuroscience_brain.jpg
+         ========================================================================== -->
+    <section class="philo-section philo-alt-bg" id="philo-neuroscience">
+      <div class="container">
+        <div class="philo-split-grid">
+          <!-- Left Content -->
+          <div class="philo-text-col">
+            <span class="section-tag"><i class="fa-solid fa-brain"></i> Cognitive Science</span>
+            <h2>Nurturing Neural Connections During Peak Growth (Ages 0-5)</h2>
+            <p>
+              By age 5, 90% of a child's brain structure is formed. Our daily interactions are scientifically engineered to foster neural plasticity through sensory stimulation and responsive emotional bonding.
+            </p>
+
+            <div class="philo-feature-list">
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-network-wired" style="color: var(--secondary);"></i>
+                <div>
+                  <h4>1 Million Synapses Per Second</h4>
+                  <p>Multi-sensory play objects stimulate rapid neural connections and pattern recognition.</p>
+                </div>
+              </div>
+
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-heart-circle-check" style="color: var(--primary);"></i>
+                <div>
+                  <h4>Serve & Return Emotional Interactions</h4>
+                  <p>Educators respond attentively to vocalizations, building emotional stability and trust.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Frame -->
+          <div class="philo-media-col">
+            <div class="philo-media-frame">
+              <img src="images/philo_neuroscience_brain.jpg" alt="Child engaging in sensory cognitive development play">
+              <div class="philo-media-tag">
+                <i class="fa-solid fa-lightbulb"></i> Peak Brain Plasticity & Sensory Co-Regulation
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: HANDS-ON STEAM INQUIRY METHOD (#philo-inquiry)
+         IMAGE 3: images/philo_steam_inquiry.jpg
+         ========================================================================== -->
+    <section class="philo-section" id="philo-inquiry">
+      <div class="container">
+        <div class="philo-split-grid reverse">
+          <!-- Left Media Frame -->
+          <div class="philo-media-col">
+            <div class="philo-media-frame">
+              <img src="images/philo_steam_inquiry.jpg" alt="Children testing physics blocks in STEAM inquiry studio">
+              <div class="philo-media-tag">
+                <i class="fa-solid fa-atom"></i> Tactile STEAM Experimentation Studio
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="philo-text-col">
+            <span class="section-tag"><i class="fa-solid fa-flask"></i> Inquiry Pedagogy</span>
+            <h2>Empowering Curiosity Through the Scientific Method</h2>
+            <p>
+              Instead of giving direct answers, our educators ask open-ended questions like "What happens if we stack these higher?" or "Why does water float here?" turning play into genuine scientific inquiry.
+            </p>
+
+            <div class="philo-feature-list">
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-cubes" style="color: var(--accent-yellow);"></i>
+                <div>
+                  <h4>Tactile Geometry & Structural Play</h4>
+                  <p>Building wooden arches and balancing scales to master physics and spatial reasoning.</p>
+                </div>
+              </div>
+
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-magnifying-glass" style="color: var(--accent-green);"></i>
+                <div>
+                  <h4>Hypothesis & Trial Exploration</h4>
+                  <p>Encouraging children to test ideas, embrace mistakes, and refine their conclusions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: BIOPHILIC & FOREST PEDAGOGY (#philo-nature)
+         IMAGE 4: images/philo_nature_forest.jpg
+         ========================================================================== -->
+    <section class="philo-section philo-alt-bg" id="philo-nature">
+      <div class="container">
+        <div class="philo-split-grid">
+          <!-- Left Content -->
+          <div class="philo-text-col">
+            <span class="section-tag"><i class="fa-solid fa-tree"></i> Eco-Pedagogy</span>
+            <h2>Nature as the Ultimate Educator</h2>
+            <p>
+              Direct contact with nature builds physical stamina, reduces stress, and fosters deep environmental respect. Our daily outdoor curriculum includes gardening, mud kitchen play, and seasonal weather observation.
+            </p>
+
+            <div class="philo-feature-list">
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-seedling" style="color: var(--accent-green);"></i>
+                <div>
+                  <h4>Organic Seed-to-Table Gardening</h4>
+                  <p>Children plant, water, and harvest vegetables used in our daily chef-prepared lunches.</p>
+                </div>
+              </div>
+
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-cloud-sun-rain" style="color: var(--secondary);"></i>
+                <div>
+                  <h4>All-Weather Outdoor Resilience</h4>
+                  <p>Equipped with rain gear, children explore puddles and soil in every season.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Frame -->
+          <div class="philo-media-col">
+            <div class="philo-media-frame">
+              <img src="images/philo_nature_forest.jpg" alt="Children planting flowers in eco-friendly daycare garden">
+              <div class="philo-media-tag">
+                <i class="fa-solid fa-leaf"></i> 90 Minutes Daily Outdoor Forest Exploration
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: SOCIAL-EMOTIONAL & MINDFUL CARE (#philo-empathy)
+         IMAGE 5: images/philo_social_empathy.jpg
+         ========================================================================== -->
+    <section class="philo-section" id="philo-empathy">
+      <div class="container">
+        <div class="philo-split-grid reverse">
+          <!-- Left Media Frame -->
+          <div class="philo-media-col">
+            <div class="philo-media-frame">
+              <img src="images/philo_social_empathy.jpg" alt="Children holding hands in circle time empathy lesson">
+              <div class="philo-media-tag">
+                <i class="fa-solid fa-hands-holding-child"></i> Mindful Breathwork & Empathy Circles
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="philo-text-col">
+            <span class="section-tag"><i class="fa-solid fa-heart"></i> Emotional Intelligence</span>
+            <h2>Co-Regulation, Mindful Breathing & Kindness Circles</h2>
+            <p>
+              Emotional literacy comes before academic testing. We teach children to name their emotions, practice deep breathing during big feelings, and practice gentle conflict resolution.
+            </p>
+
+            <div class="philo-feature-list">
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-face-smile" style="color: var(--accent-yellow);"></i>
+                <div>
+                  <h4>Emotion Vocabulary & Labeling</h4>
+                  <p>Helping toddlers identify feeling happy, frustrated, or excited using visual emotion cards.</p>
+                </div>
+              </div>
+
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-hands-clapping" style="color: var(--accent-purple);"></i>
+                <div>
+                  <h4>Peer Peace-Making Protocol</h4>
+                  <p>Guided conversation tools where children express boundaries and apologize with genuine care.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: THE 100 LANGUAGES OF CHILDREN (#philo-expressive)
+         IMAGE 6: images/philo_creative_expressive.jpg
+         ========================================================================== -->
+    <section class="philo-section philo-alt-bg" id="philo-expressive">
+      <div class="container">
+        <div class="philo-split-grid">
+          <!-- Left Content -->
+          <div class="philo-text-col">
+            <span class="section-tag"><i class="fa-solid fa-paintbrush"></i> Creative Expression</span>
+            <h2>The 100 Languages of Art, Music & Dramatic Play</h2>
+            <p>
+              Inspired by Loris Malaguzzi's Reggio Emilia philosophy, we believe children express thought through a hundred languages: clay, paint, shadows, dance, theater, and construction.
+            </p>
+
+            <div class="philo-feature-list">
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-palette" style="color: var(--primary);"></i>
+                <div>
+                  <h4>Atelier Art Studio</h4>
+                  <p>Open access to watercolors, clay modeling, charcoal, and natural loose-part materials.</p>
+                </div>
+              </div>
+
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-music" style="color: var(--accent-purple);"></i>
+                <div>
+                  <h4>Acoustic Movement & Drama</h4>
+                  <p>Daily rhythm instruments, storytelling puppet shows, and costume roleplay.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Media Frame -->
+          <div class="philo-media-col">
+            <div class="philo-media-frame">
+              <img src="images/philo_creative_expressive.jpg" alt="Children creating watercolor art at atelier studio table">
+              <div class="philo-media-tag">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Unrestricted Atelier Creative Expression
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: AUTHENTIC OBSERVATION & PORTFOLIOS (#philo-assessment)
+         IMAGE 7: images/philo_assessment_portfolio.jpg
+         ========================================================================== -->
+    <section class="philo-section" id="philo-assessment">
+      <div class="container">
+        <div class="philo-split-grid reverse">
+          <!-- Left Media Frame -->
+          <div class="philo-media-col">
+            <div class="philo-media-frame">
+              <img src="images/philo_assessment_portfolio.jpg" alt="Teacher documenting child learning milestones in digital portfolio">
+              <div class="philo-media-tag">
+                <i class="fa-solid fa-clipboard-check"></i> Digital Learning Journeys & Milestone Tracking
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="philo-text-col">
+            <span class="section-tag"><i class="fa-solid fa-book-bookmark"></i> Growth Documentation</span>
+            <h2>Authentic Observation Without Standardized Pressure</h2>
+            <p>
+              We don't grade young children. Instead, our educators document authentic learning moments through photo portfolios, learning stories, and developmental milestone check-ins shared directly with parents.
+            </p>
+
+            <div class="philo-feature-list">
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-mobile-screen-button" style="color: var(--secondary);"></i>
+                <div>
+                  <h4>Live Parent Portal Milestone Feed</h4>
+                  <p>Receive daily photo stories and developmental updates directly on your mobile device.</p>
+                </div>
+              </div>
+
+              <div class="philo-feature-card">
+                <i class="fa-solid fa-folder-open" style="color: var(--accent-green);"></i>
+                <div>
+                  <h4>Graduation Memory Keepsakes</h4>
+                  <p>Comprehensive physical & digital art portfolios presented to every graduating family.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL COMPONENT (EXACT MATCH)
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

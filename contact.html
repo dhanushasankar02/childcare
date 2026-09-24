@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Book a Campus Tour - LittleStars Childcare</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span id="current-home-text">Home 1</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1" style="display:none;">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2" style="display:none;">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: HERO CONCIERGE SHOWCASE (#contact-hero)
+         ========================================================================== -->
+    <section class="cnt-hero-section" id="contact-hero">
+      <div class="container">
+        <div class="cnt-hero-grid">
+          <!-- Left Column -->
+          <div class="cnt-hero-text">
+            <div class="cnt-live-status">
+              <span class="cnt-pulse-dot"></span> Open Today: 7:00 AM – 6:30 PM
+            </div>
+
+            <h1 class="cnt-hero-title">
+              We're Here for Your Family: <span class="gradient-text">Get in Touch With Us</span>
+            </h1>
+
+            <p class="cnt-hero-desc">
+              Have questions about enrollment, tuition options, or our daily curriculum? Our admissions concierges and center directors are ready to assist you every step of the way.
+            </p>
+
+            <!-- Quick Direct Contact Pills -->
+            <div class="cnt-quick-pills">
+              <div class="cnt-quick-pill">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <span>Admissions Hotline</span>
+                  <strong>(555) 234-5678</strong>
+                </div>
+              </div>
+
+              <div class="cnt-quick-pill">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <span>Direct Inquiry Email</span>
+                  <strong>hello@littlestars.com</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column Glass Concierge Card -->
+          <div class="cnt-hero-media">
+            <div class="cnt-hero-frame">
+              <div class="cnt-float-badge badge-top">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <div>
+                  <strong>Fast Response Guarantee</strong>
+                  <span>Replies within 2 business hours</span>
+                </div>
+              </div>
+
+              <div class="cnt-float-badge badge-bottom">
+                <i class="fa-solid fa-building-circle-check"></i>
+                <div>
+                  <strong>Campus Open Daily</strong>
+                  <span>Guided Tours Available Mon–Fri</span>
+                </div>
+              </div>
+
+              <a href="#contact-tour" class="btn-primary glow-btn" style="width:100%; justify-content:center; margin-top:20px;">
+                Schedule Your Campus Tour <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: INTERACTIVE TOUR SCHEDULER & BOOKING PORTAL (#contact-tour)
+         ========================================================================== -->
+    <section class="cnt-tour-section" id="contact-tour">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-calendar-check"></i> Schedule a Visit</span>
+          <h2 class="section-title">Book a Personalized Campus Tour</h2>
+          <p class="section-desc">Experience our classrooms, meet our certified teachers, and see our security protocols in action.</p>
+        </div>
+
+        <div class="cnt-tour-split">
+          <!-- Left Booking Form -->
+          <div class="cnt-tour-form-box">
+            <form class="cnt-tour-form" onsubmit="event.preventDefault(); alert('Thank you! Your campus tour request has been submitted.');">
+              <div class="cnt-form-row">
+                <div class="cnt-field-group">
+                  <label><i class="fa-solid fa-user"></i> Parent Full Name</label>
+                  <input type="text" placeholder="e.g. Eleanor Vance" required>
+                </div>
+
+                <div class="cnt-field-group">
+                  <label><i class="fa-solid fa-envelope"></i> Email Address</label>
+                  <input type="email" placeholder="eleanor@example.com" required>
+                </div>
+              </div>
+
+              <div class="cnt-form-row">
+                <div class="cnt-field-group">
+                  <label><i class="fa-solid fa-phone"></i> Phone Number</label>
+                  <input type="tel" placeholder="(555) 000-0000" required>
+                </div>
+
+                <div class="cnt-field-group">
+                  <label><i class="fa-solid fa-child"></i> Child's Age Group</label>
+                  <select required>
+                    <option value="">Select Age Group</option>
+                    <option>Infant Nest (6 wks – 12 mos)</option>
+                    <option>Toddler Explorers (1 – 2.5 yrs)</option>
+                    <option>Preschool STEAM (3 – 5 yrs)</option>
+                    <option>After-School Club (6 – 12 yrs)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="cnt-form-row">
+                <div class="cnt-field-group">
+                  <label><i class="fa-solid fa-calendar-day"></i> Preferred Tour Date</label>
+                  <input type="date" required>
+                </div>
+
+                <div class="cnt-field-group">
+                  <label><i class="fa-solid fa-clock"></i> Preferred Time Slot</label>
+                  <select required>
+                    <option value="">Select Time Slot</option>
+                    <option>Morning Slot (9:30 AM)</option>
+                    <option>Midday Slot (11:30 AM)</option>
+                    <option>Afternoon Slot (2:30 PM)</option>
+                    <option>Evening Slot (5:00 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="cnt-field-group">
+                <label><i class="fa-solid fa-message"></i> Special Questions or Requests</label>
+                <textarea rows="3" placeholder="Tell us about any specific interests (dietary needs, STEAM focus, subsidies)..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary glow-btn" style="width:100%; justify-content:center;">
+                Confirm My Tour Reservation <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right Tour Preview Photo & Highlights -->
+          <div class="cnt-tour-info-col">
+            <div class="cnt-tour-photo-wrapper">
+              <img src="images/cnt_tour_preview.jpg" alt="Teacher leading parents through modern daycare facility">
+              <div class="cnt-photo-overlay-tag">
+                <i class="fa-solid fa-shield-cat"></i> Safety-First Facility Guided Tour
+              </div>
+            </div>
+
+            <div class="cnt-tour-bullets">
+              <div class="cnt-bullet-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Observe active classrooms in session</span>
+              </div>
+              <div class="cnt-bullet-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Meet lead teachers & nursery supervisors</span>
+              </div>
+              <div class="cnt-bullet-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Inspect kitchen, playground & biometric security</span>
+              </div>
+              <div class="cnt-bullet-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Receive personalized tuition cost breakdown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: LOCATION, DRIVING DIRECTIONS & PARKING (#contact-map)
+         ========================================================================== -->
+    <section class="cnt-map-section" id="contact-map">
+      <div class="container">
+        <div class="cnt-map-grid">
+          <!-- Left Directions Column -->
+          <div class="cnt-map-info-col">
+            <span class="section-tag green-tag"><i class="fa-solid fa-map-location-dot"></i> Campus Access</span>
+            <h2>Visit Our State-of-the-Art Center</h2>
+            <p>Conveniently located near major transit lines and residential neighborhoods with dedicated parent drop-off bays.</p>
+
+            <div class="cnt-directions-list">
+              <div class="cnt-dir-item">
+                <div class="cnt-dir-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <strong>Campus Address</strong>
+                  <p>742 Evergreen Terrace, Suite 100, Sunnyside, NY 10001</p>
+                </div>
+              </div>
+
+              <div class="cnt-dir-item">
+                <div class="cnt-dir-icon"><i class="fa-solid fa-car"></i></div>
+                <div>
+                  <strong>Parking & Express Drop-Off</strong>
+                  <p>15-minute reserved drop-off parking bays directly in front of main security gates.</p>
+                </div>
+              </div>
+
+              <div class="cnt-dir-item">
+                <div class="cnt-dir-icon"><i class="fa-solid fa-train-subway"></i></div>
+                <div>
+                  <strong>Public Transit Access</strong>
+                  <p>2 blocks from Sunnyside Metro Station (Lines A & C), Bus Stop #14 directly outside entrance.</p>
+                </div>
+              </div>
+
+              <div class="cnt-dir-item">
+                <div class="cnt-dir-icon"><i class="fa-solid fa-door-closed"></i></div>
+                <div>
+                  <strong>Visitor Entry Gate Code</strong>
+                  <p>Ring Intercom Button #1 at security gate for instant concierge verification.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Map Frame -->
+          <div class="cnt-map-media-col">
+            <div class="cnt-map-frame">
+              <img src="images/cnt_map_location.jpg" alt="Architectural exterior of LittleStars Daycare campus">
+              <div class="cnt-map-badge">
+                <i class="fa-solid fa-compass"></i> GPS: 40.7128° N, 74.0060° W
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: DIRECT DEPARTMENT DIRECTORY (#contact-departments)
+         ========================================================================== -->
+    <section class="cnt-dept-section" id="contact-departments">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-sitemap"></i> Direct Contacts</span>
+          <h2 class="section-title">Department Directory & Extensions</h2>
+          <p class="section-desc">Connect directly with the specialized team member who can help answer your questions.</p>
+        </div>
+
+        <div class="cnt-dept-grid">
+          <div class="cnt-dept-card">
+            <div class="cnt-dept-header">
+              <i class="fa-solid fa-id-card"></i>
+              <div>
+                <h3>Admissions & Registrations</h3>
+                <span>Enrollment & Waitlists</span>
+              </div>
+            </div>
+            <p>Questions on application fees, availability, or touring schedule.</p>
+            <div class="cnt-dept-contact">
+              <span><i class="fa-solid fa-user"></i> Sarah Jenkins (Director)</span>
+              <span><i class="fa-solid fa-phone"></i> Ext. 101 | (555) 234-5671</span>
+              <span><i class="fa-solid fa-envelope"></i> admissions@littlestars.com</span>
+            </div>
+          </div>
+
+          <div class="cnt-dept-card">
+            <div class="cnt-dept-header">
+              <i class="fa-solid fa-user-nurse"></i>
+              <div>
+                <h3>Pediatric Nurse & Clinic</h3>
+                <span>Health & Dietary Care</span>
+              </div>
+            </div>
+            <p>Medication administration forms, allergy plans, and sickness notifications.</p>
+            <div class="cnt-dept-contact">
+              <span><i class="fa-solid fa-user"></i> Nurse Amanda Vance, RN</span>
+              <span><i class="fa-solid fa-phone"></i> Ext. 104 | (555) 234-5674</span>
+              <span><i class="fa-solid fa-envelope"></i> clinic@littlestars.com</span>
+            </div>
+          </div>
+
+          <div class="cnt-dept-card">
+            <div class="cnt-dept-header">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+              <div>
+                <h3>Tuition & Accounts</h3>
+                <span>Billing & State Subsidies</span>
+              </div>
+            </div>
+            <p>Auto-pay setup, voucher processing, employer match, and invoices.</p>
+            <div class="cnt-dept-contact">
+              <span><i class="fa-solid fa-user"></i> David Miller (Billing Lead)</span>
+              <span><i class="fa-solid fa-phone"></i> Ext. 102 | (555) 234-5672</span>
+              <span><i class="fa-solid fa-envelope"></i> billing@littlestars.com</span>
+            </div>
+          </div>
+
+          <div class="cnt-dept-card">
+            <div class="cnt-dept-header">
+              <i class="fa-solid fa-headset"></i>
+              <div>
+                <h3>Parent App IT Helpdesk</h3>
+                <span>Mobile App Support</span>
+              </div>
+            </div>
+            <p>Login troubleshooting, password resets, and photo feed access.</p>
+            <div class="cnt-dept-contact">
+              <span><i class="fa-solid fa-user"></i> Tech Desk Team</span>
+              <span><i class="fa-solid fa-phone"></i> Ext. 109 | (555) 234-5679</span>
+              <span><i class="fa-solid fa-envelope"></i> appsupport@littlestars.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: VIRTUAL VIRTUAL HELPDESK & LIVE CHAT (#contact-helpdesk)
+         ========================================================================== -->
+    <section class="cnt-helpdesk-section" id="contact-helpdesk">
+      <div class="container">
+        <div class="cnt-helpdesk-grid">
+          <!-- Left Media Column -->
+          <div class="cnt-helpdesk-media">
+            <div class="cnt-helpdesk-frame">
+              <img src="images/cnt_live_helpdesk.jpg" alt="Parent holding mobile phone using daycare app live chat">
+              <div class="cnt-chat-bubble">
+                <i class="fa-solid fa-comments"></i>
+                <div>
+                  <strong>Live Chat Active</strong>
+                  <span>Average wait time: &lt; 1 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content Column -->
+          <div class="cnt-helpdesk-text">
+            <span class="section-tag green-tag"><i class="fa-solid fa-bolt"></i> Instant Parent Channels</span>
+            <h2>Digital Parent Support Desk</h2>
+            <p>Need a quick answer right now? We offer multiple real-time digital communication lines for registered and prospective parents.</p>
+
+            <div class="cnt-helpdesk-list">
+              <div class="cnt-helpdesk-item">
+                <div class="cnt-hd-icon p-ic-coral"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h4>WhatsApp Parent Hotline</h4>
+                  <p>Send instant text queries to our front desk team at <strong>+1 (555) 987-6543</strong>.</p>
+                </div>
+              </div>
+
+              <div class="cnt-helpdesk-item">
+                <div class="cnt-hd-icon p-ic-blue"><i class="fa-solid fa-video"></i></div>
+                <div>
+                  <h4>Virtual Zoom Consultations</h4>
+                  <p>Schedule a 15-minute video call with our center director from the comfort of your home.</p>
+                </div>
+              </div>
+
+              <div class="cnt-helpdesk-item">
+                <div class="cnt-hd-icon p-ic-yellow"><i class="fa-solid fa-comment-sms"></i></div>
+                <div>
+                  <h4>SMS Weather & Emergency Broadcasts</h4>
+                  <p>Subscribed parents receive instant SMS alerts regarding snow closures or delay advisories.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: ADMISSIONS FAQ ACCORDION (#contact-faq)
+         ========================================================================== -->
+    <section class="cnt-faq-section" id="contact-faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Questions & Answers</span>
+          <h2 class="section-title">Frequently Asked Contact Questions</h2>
+          <p class="section-desc">Quick answers to common questions about visiting, drop-offs, and admissions inquiries.</p>
+        </div>
+
+        <div class="cnt-faq-split">
+          <!-- Accordion Questions Left -->
+          <div class="cnt-faq-accordion">
+            <details class="cnt-faq-item" open>
+              <summary>
+                <span><i class="fa-solid fa-circle-check"></i> Can I drop by for a tour without booking in advance?</span>
+                <i class="fa-solid fa-chevron-down cnt-arrow"></i>
+              </summary>
+              <div class="cnt-faq-answer">
+                <p>To ensure campus security and uninterrupted classroom learning, all tours must be scheduled at least 24 hours in advance. You can easily book online using our tour scheduler above!</p>
+              </div>
+            </details>
+
+            <details class="cnt-faq-item">
+              <summary>
+                <span><i class="fa-solid fa-circle-check"></i> What are your main front desk office hours?</span>
+                <i class="fa-solid fa-chevron-down cnt-arrow"></i>
+              </summary>
+              <div class="cnt-faq-answer">
+                <p>Our concierge desk is staffed Monday through Friday from 7:00 AM to 6:30 PM. Email inquiries sent after hours are answered early the next business morning.</p>
+              </div>
+            </details>
+
+            <details class="cnt-faq-item">
+              <summary>
+                <span><i class="fa-solid fa-circle-check"></i> How do I contact my child's teacher during the day?</span>
+                <i class="fa-solid fa-chevron-down cnt-arrow"></i>
+              </summary>
+              <div class="cnt-faq-answer">
+                <p>Enrolled parents can send direct messages anytime via our Live Parent Mobile App. For urgent matters, call the main reception desk and we will relay your message immediately.</p>
+              </div>
+            </details>
+
+            <details class="cnt-faq-item">
+              <summary>
+                <span><i class="fa-solid fa-circle-check"></i> Where do parents park during morning drop-off?</span>
+                <i class="fa-solid fa-chevron-down cnt-arrow"></i>
+              </summary>
+              <div class="cnt-faq-answer">
+                <p>We provide 15 reserved express drop-off parking bays right outside our security gates with staff attendants assisting toddlers from cars between 7:30 AM and 9:00 AM.</p>
+              </div>
+            </details>
+          </div>
+
+          <!-- FAQ Support Photo Right -->
+          <div class="cnt-faq-media">
+            <div class="cnt-faq-frame">
+              <img src="images/cnt_faq_support.jpg" alt="Parent consulting warmly with center director at desk">
+              <div class="cnt-faq-badge">
+                <i class="fa-solid fa-headset"></i> 100% Responsive Parent Care
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: COMMUNITY OPEN HOUSE & VISITOR EVENTS (#contact-events)
+         ========================================================================== -->
+    <section class="cnt-events-section" id="contact-events">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag green-tag"><i class="fa-solid fa-calendar-days"></i> Visitor Events</span>
+          <h2 class="section-title">Upcoming Campus Open Houses</h2>
+          <p class="section-desc">Join us for special community workshops, parent orientation nights, and open house tours.</p>
+        </div>
+
+        <div class="cnt-events-grid">
+          <div class="cnt-event-card">
+            <div class="cnt-event-date">
+              <span class="month">OCT</span>
+              <span class="day">12</span>
+            </div>
+            <div class="cnt-event-content">
+              <span class="cnt-event-tag">Open House</span>
+              <h3>Fall Family Discovery Day</h3>
+              <p>Explore all 7 classrooms, enjoy organic chef tastings, and participate in sensory play stations with lead faculty.</p>
+              <div class="cnt-event-meta">
+                <span><i class="fa-solid fa-clock"></i> 10:00 AM – 1:00 PM</span>
+                <span><i class="fa-solid fa-location-dot"></i> Main Playground</span>
+              </div>
+              <a href="#contact-tour" class="btn-secondary" style="margin-top:14px;">RSVP Event <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="cnt-event-card">
+            <div class="cnt-event-date" style="background: linear-gradient(135deg, var(--secondary), #0ABDE3);">
+              <span class="month">OCT</span>
+              <span class="day">24</span>
+            </div>
+            <div class="cnt-event-content">
+              <span class="cnt-event-tag" style="background: rgba(72, 219, 251, 0.15); color: #0ABDE3;">STEAM Workshop</span>
+              <h3>Toddler Robotics & Science Night</h3>
+              <p>Interactive hands-on session for prospective parents and children (ages 2–5) to test our robotics curriculum.</p>
+              <div class="cnt-event-meta">
+                <span><i class="fa-solid fa-clock"></i> 4:30 PM – 6:00 PM</span>
+                <span><i class="fa-solid fa-location-dot"></i> STEAM Lab Studio</span>
+              </div>
+              <a href="#contact-tour" class="btn-secondary" style="margin-top:14px;">RSVP Event <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="cnt-event-card">
+            <div class="cnt-event-date" style="background: linear-gradient(135deg, var(--accent-purple), #8E44AD);">
+              <span class="month">NOV</span>
+              <span class="day">08</span>
+            </div>
+            <div class="cnt-event-content">
+              <span class="cnt-event-tag" style="background: rgba(155, 89, 182, 0.15); color: var(--accent-purple);">Parent Seminar</span>
+              <h3>Early Learning & Neuroscience Talk</h3>
+              <p>Special guest lecture by Dr. Maria Rodriguez on emotional growth and brain development in toddlers.</p>
+              <div class="cnt-event-meta">
+                <span><i class="fa-solid fa-clock"></i> 6:00 PM – 7:30 PM</span>
+                <span><i class="fa-solid fa-location-dot"></i> Media Auditorium</span>
+              </div>
+              <a href="#contact-tour" class="btn-secondary" style="margin-top:14px;">RSVP Event <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL COMPONENT
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+

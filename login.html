@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LittleStars - Childcare Online Portal Login</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="unitutor-login-body sticky-viewport">
+
+  <!-- Top Right Utility Buttons -->
+  <div class="unitutor-top-actions">
+    <a href="index.html" class="unitutor-icon-btn" title="Back to Home Website" style="width:auto; padding:0 14px; border-radius:999px; gap:6px; text-decoration:none; font-weight:800; font-size:0.8rem;">
+      <i class="fa-solid fa-arrow-left"></i> Home
+    </a>
+    <button class="unitutor-icon-btn" id="rtl-toggle-btn" title="Switch to LTR/RTL Layout">
+      <i class="fa-solid fa-right-left"></i>
+    </button>
+    <button class="unitutor-icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- Centered Login Box Container (Compact Fixed Viewport Fit - Zero Scroll) -->
+  <main class="unitutor-login-wrapper compact-fit">
+    <div class="unitutor-card compact-card">
+      
+      <!-- Brand Logo Header (Clickable link to index.html) -->
+      <a href="index.html" class="unitutor-brand compact-brand" title="Return to Homepage" style="text-decoration:none;">
+        <div class="unitutor-logo-badge compact-badge">
+          <i class="fa-solid fa-child-reaching"></i>
+        </div>
+        <div class="unitutor-brand-text">
+          <h2>LittleStars<span>.</span></h2>
+          <p>CHILDCARE ONLINE</p>
+        </div>
+      </a>
+
+      <!-- 3-Role Tab Switcher -->
+      <div class="unitutor-role-switcher compact-switcher">
+        <button class="role-btn active" id="role-parent">
+          <i class="fa-solid fa-user"></i> Parent
+        </button>
+        <button class="role-btn" id="role-teacher">
+          <i class="fa-solid fa-user-nurse"></i> Teacher
+        </button>
+        <button class="role-btn" id="role-admin">
+          <i class="fa-solid fa-shield-halved"></i> Admin
+        </button>
+      </div>
+
+      <!-- Login Form -->
+      <form class="unitutor-form" onsubmit="event.preventDefault(); alert('Sign in successful! Welcome to LittleStars Online Portal.'); window.location.href='index.html';">
+        <div class="unitutor-field compact-field">
+          <label id="unitutor-email-label">EMAIL ADDRESS</label>
+          <input type="email" placeholder="parent@littlestars.edu" required id="unitutor-email-input">
+        </div>
+
+        <div class="unitutor-field compact-field">
+          <label>PASSWORD</label>
+          <input type="password" placeholder="••••••••••••" required id="unitutor-pwd-input">
+        </div>
+
+        <div class="unitutor-options compact-options">
+          <label class="unitutor-remember">
+            <input type="checkbox" checked>
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="unitutor-forgot" onclick="alert('Reset instructions sent to your email.'); return false;">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="unitutor-btn-primary compact-btn">
+          SIGN IN TO ACCOUNT &rarr;
+        </button>
+      </form>
+
+      <!-- Secondary SSO Buttons -->
+      <div class="unitutor-sso-group" style="gap:8px; margin-top:12px;">
+        <button type="button" class="unitutor-btn-outline" style="padding:9px; font-size:0.8rem;" onclick="alert('Redirecting to District Parent SSO...');">
+          <i class="fa-solid fa-graduation-cap"></i> Sign in with Parent SSO (Shibboleth)
+        </button>
+        
+        <button type="button" class="unitutor-btn-light" style="padding:9px; font-size:0.8rem;" onclick="alert('Authenticating with Passkey / Face ID...');">
+          <i class="fa-solid fa-key"></i> Sign in with Passkey / Face ID
+        </button>
+      </div>
+
+      <!-- Social Divider -->
+      <div class="unitutor-divider compact-divider">
+        <span>OR CONTINUE WITH SOCIAL</span>
+      </div>
+
+      <!-- Social Login Buttons Row -->
+      <div class="unitutor-social-row compact-social">
+        <button type="button" class="unitutor-social-btn" onclick="alert('Authenticating with Google...');">
+          <i class="fa-brands fa-google" style="color:#EA4335;"></i> Google
+        </button>
+        
+        <button type="button" class="unitutor-social-btn" onclick="alert('Authenticating with Apple...');">
+          <i class="fa-brands fa-apple"></i> Apple
+        </button>
+        
+        <button type="button" class="unitutor-social-btn" onclick="alert('Authenticating with Microsoft...');">
+          <i class="fa-brands fa-microsoft" style="color:#00A4EF;"></i> Microsoft
+        </button>
+      </div>
+
+      <!-- Footer Prompt -->
+      <div class="unitutor-footer compact-footer" style="text-align: center;">
+        <span>Don't have an account?</span>
+        <a href="register.html">Create Account</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    // Tab switching logic matching the reference screen
+    const roleParent = document.getElementById('role-parent');
+    const roleTeacher = document.getElementById('role-teacher');
+    const roleAdmin = document.getElementById('role-admin');
+    const emailLabel = document.getElementById('unitutor-email-label');
+    const emailInput = document.getElementById('unitutor-email-input');
+
+    function setActiveRole(btn, labelText, placeholderText) {
+      [roleParent, roleTeacher, roleAdmin].forEach(b => b?.classList.remove('active'));
+      btn.classList.add('active');
+      if (emailLabel) emailLabel.textContent = labelText;
+      if (emailInput) emailInput.placeholder = placeholderText;
+    }
+
+    roleParent?.addEventListener('click', () => {
+      setActiveRole(roleParent, 'EMAIL ADDRESS', 'parent@littlestars.edu');
+    });
+
+    roleTeacher?.addEventListener('click', () => {
+      setActiveRole(roleTeacher, 'TEACHER EMAIL OR BADGE ID', 'teacher@littlestars.edu');
+    });
+
+    roleAdmin?.addEventListener('click', () => {
+      setActiveRole(roleAdmin, 'ADMINISTRATOR ID', 'admin@littlestars.edu');
+    });
+  </script>
+</body>
+</html>

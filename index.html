@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LittleStars Childcare & Daycare Center - Nurturing Young Minds</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle active">
+              <span id="current-home-text">Home 1</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2" style="display:none;">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: HERO BANNER (#hero) - FLUID OPEN SHOWCASE
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Animated Background Decorative Floating Blobs -->
+      <div class="hero-bg-shapes">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+        <div class="hero-shape shape-3"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Text Content Column -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-pulse"></span>
+              <i class="fa-solid fa-star"></i> Rated #1 Daycare & Preschool Center 2026
+            </div>
+            
+            <h1 class="hero-title">
+              Where Every Child's Journey Begins With <span class="gradient-text">Joy & Discovery</span>
+            </h1>
+            
+            <p class="hero-desc">
+              At LittleStars, we foster curiosity, creativity, and confidence in a safe, play-centric environment. Certified educators, nutritious meals, and STEM-infused early learning prepare your child for a bright future.
+            </p>
+            
+
+
+            <!-- Enhanced Interactive Stats Bar -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-icon-wrapper p-ic-1">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <h4>12+ Yrs</h4>
+                  <p>Childcare Excellence</p>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-icon-wrapper p-ic-2">
+                  <i class="fa-solid fa-face-smile"></i>
+                </div>
+                <div>
+                  <h4>500+</h4>
+                  <p>Happy Toddlers</p>
+                </div>
+              </div>
+
+              <div class="stat-item">
+                <div class="stat-icon-wrapper p-ic-3">
+                  <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <div>
+                  <h4>100%</h4>
+                  <p>Certified Teachers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Organic Blob Media & Floating Badges Showcase -->
+          <div class="hero-media">
+            <div class="hero-blob-frame">
+              <img src="images/hero_playground.jpg" alt="Children playing safely at LittleStars Daycare">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: ABOUT US (#about) - OPEN ASYMMETRIC FLUID SPLIT
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-fluid-grid">
+          <!-- Left Photo Showcase -->
+          <div class="about-photo-wrapper">
+            <img src="images/about_learning.jpg" alt="Teacher guiding toddlers in creative painting">
+            <div class="experience-tag">
+              <i class="fa-solid fa-award"></i> 12+ Yrs Early Learning Excellence
+            </div>
+          </div>
+
+          <!-- Right Content Column -->
+          <div class="about-text-column">
+            <span class="section-tag"><i class="fa-solid fa-heart"></i> About LittleStars</span>
+            <h2>Nurturing Young Minds Through Love, Play & Science</h2>
+            <p>
+              We believe early childhood is the bedrock of lifelong curiosity. Our early learning philosophy combines hands-on play, sensory exploration, emotional security, and structured STEM activities to help your child thrive.
+            </p>
+
+            <div class="pillar-list">
+              <div class="pillar-row">
+                <div class="pillar-circle-icon p-ic-1">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="pillar-row-text">
+                  <h4>100% Safe & Secure Campus</h4>
+                  <p>Biometric entry, monitored play zones & strict safety protocols.</p>
+                </div>
+              </div>
+
+              <div class="pillar-row">
+                <div class="pillar-circle-icon p-ic-2">
+                  <i class="fa-solid fa-apple-whole"></i>
+                </div>
+                <div class="pillar-row-text">
+                  <h4>Nutritious Chef-Prepared Meals</h4>
+                  <p>Organic lunches and fresh dietary-approved daily snacks.</p>
+                </div>
+              </div>
+
+              <div class="pillar-row">
+                <div class="pillar-circle-icon p-ic-3">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="pillar-row-text">
+                  <h4>Creative Art & STEM Experiments</h4>
+                  <p>Daily music, pottery, storytelling, and early math labs.</p>
+                </div>
+              </div>
+
+              <div class="pillar-row">
+                <div class="pillar-circle-icon p-ic-4">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="pillar-row-text">
+                  <h4>Licensed & Certified Educators</h4>
+                  <p>Teachers certified in First Aid, CPR & child psychology.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: EDUCATIONAL PROGRAMS (#programs) - HORIZONTAL RIBBON LIST
+         ========================================================================== -->
+    <section class="programs-section" id="programs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-cubes"></i> Our Curriculum</span>
+          <h2 class="section-title">Tailored Learning Programs For Every Stage</h2>
+          <p class="section-desc">
+            Explore our stage-by-stage learning pathways designed for holistic early development.
+          </p>
+        </div>
+
+        <div class="program-ribbon-list">
+          <!-- Ribbon Row 1 -->
+          <div class="program-ribbon-row">
+            <div class="ribbon-number rn-1">01</div>
+            <div class="ribbon-info">
+              <div class="ribbon-title-wrap">
+                <h3>Infant Care Nest</h3>
+                <span class="ribbon-age">0 - 1.5 Years</span>
+              </div>
+              <p class="ribbon-desc">
+                Gentle, loving care focused on sensory exploration, tummy time, motor milestones, and personalized feeding schedules.
+              </p>
+            </div>
+            <img src="images/program_infant.jpg" alt="Infant Care Nest" class="ribbon-photo">
+            <a href="contact.html" class="ribbon-action-btn" title="Enroll Infant">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Ribbon Row 2 -->
+          <div class="program-ribbon-row">
+            <div class="ribbon-number rn-2">02</div>
+            <div class="ribbon-info">
+              <div class="ribbon-title-wrap">
+                <h3>Toddler Explorers</h3>
+                <span class="ribbon-age">1.5 - 3 Years</span>
+              </div>
+              <p class="ribbon-desc">
+                Active discovery encouraging language growth, motor skills, wooden building blocks, and social play.
+              </p>
+            </div>
+            <img src="images/program_toddler.jpg" alt="Toddler Explorers" class="ribbon-photo">
+            <a href="contact.html" class="ribbon-action-btn" title="Enroll Toddler">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Ribbon Row 3 -->
+          <div class="program-ribbon-row">
+            <div class="ribbon-number rn-3">03</div>
+            <div class="ribbon-info">
+              <div class="ribbon-title-wrap">
+                <h3>Preschool Adventurers</h3>
+                <span class="ribbon-age">3 - 5 Years</span>
+              </div>
+              <p class="ribbon-desc">
+                Structured early learning preparing children for kindergarten with phonics, math concepts, science, and music.
+              </p>
+            </div>
+            <img src="images/program_preschool.jpg" alt="Preschool Adventurers" class="ribbon-photo">
+            <a href="contact.html" class="ribbon-action-btn" title="Enroll Preschooler">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Ribbon Row 4 -->
+          <div class="program-ribbon-row">
+            <div class="ribbon-number rn-4">04</div>
+            <div class="ribbon-info">
+              <div class="ribbon-title-wrap">
+                <h3>After-School Club</h3>
+                <span class="ribbon-age">5 - 10 Years</span>
+              </div>
+              <p class="ribbon-desc">
+                Enriching after-school environment with homework assistance, STEM robotics projects, sports, and creative crafts.
+              </p>
+            </div>
+            <img src="images/program_afterschool.jpg" alt="After-School Club" class="ribbon-photo">
+            <a href="contact.html" class="ribbon-action-btn" title="Join After-School">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: DAILY SCHEDULE (#schedule) - CONTINUOUS VERTICAL SPINE TIMELINE
+         ========================================================================== -->
+    <section class="schedule-section" id="schedule">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-clock"></i> Daily Pathway</span>
+          <h2 class="section-title">A Day In The Life At LittleStars</h2>
+          <p class="section-desc">
+            A balanced daily rhythm between active learning, outdoor play, organic meals, and quiet rest.
+          </p>
+        </div>
+
+        <div class="spine-timeline-wrapper">
+          <div class="spine-line"></div>
+
+          <!-- Spine Step 1 -->
+          <div class="spine-item">
+            <div class="spine-node">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="spine-content-block">
+              <span class="spine-time-tag">08:00 AM – 09:30 AM</span>
+              <h4>Morning Welcome & Healthy Breakfast</h4>
+              <p>Warm greetings, gentle circle time, and chef-prepared organic breakfast.</p>
+            </div>
+          </div>
+
+          <!-- Spine Step 2 -->
+          <div class="spine-item">
+            <div class="spine-node" style="border-color: var(--secondary); color: var(--secondary);">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="spine-content-block">
+              <span class="spine-time-tag" style="background: rgba(72, 219, 251, 0.15); color: #00D2D3;">09:30 AM – 12:00 PM</span>
+              <h4>STEM & Sensory Exploration</h4>
+              <p>Hands-on building block labs, science toy experiments, and fine motor station activities.</p>
+            </div>
+          </div>
+
+          <!-- Spine Step 3 -->
+          <div class="spine-item">
+            <div class="spine-node" style="border-color: var(--accent-yellow); color: #FF9F43;">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="spine-content-block">
+              <span class="spine-time-tag" style="background: rgba(254, 202, 87, 0.2); color: #FF9F43;">12:00 PM – 02:30 PM</span>
+              <h4>Organic Lunch & Storytelling Nook</h4>
+              <p>Nutritious lunch followed by picture book reading circle and quiet lullaby naps.</p>
+              <div class="spine-photo-preview">
+                <img src="images/activity_storytime.jpg" alt="Kids reading picture book in storytime corner">
+              </div>
+            </div>
+          </div>
+
+          <!-- Spine Step 4 -->
+          <div class="spine-item">
+            <div class="spine-node" style="border-color: var(--accent-green); color: var(--accent-green);">
+              <i class="fa-solid fa-child-rebounding"></i>
+            </div>
+            <div class="spine-content-block">
+              <span class="spine-time-tag" style="background: rgba(29, 209, 161, 0.15); color: var(--accent-green);">02:30 PM – 05:30 PM</span>
+              <h4>Outdoor Playground & Parent Pickup</h4>
+              <p>Outdoor playground games, tricycle tracks, fresh afternoon snacks, and safe parent departure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: CERTIFIED EDUCATORS (#teachers) - FLOATING AVATAR ORBIT
+         ========================================================================== -->
+    <section class="teachers-section" id="teachers">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-chalkboard-user"></i> Our Educators</span>
+          <h2 class="section-title">Meet Our Certified Teachers</h2>
+          <p class="section-desc">
+            Qualified, loving educators dedicated to nurturing your child's emotional and academic milestones.
+          </p>
+        </div>
+
+        <div class="avatar-orbit-grid">
+          <!-- Member 1 -->
+          <div class="orbit-member">
+            <div class="orbit-photo-box">
+              <img src="images/teacher_sarah.jpg" alt="Sarah Jenkins" class="orbit-photo">
+              <span class="experience-chip">10+ Yrs Exp</span>
+            </div>
+            <h3 class="teacher-name">Sarah Jenkins, M.Ed</h3>
+            <p class="teacher-role">Center Director & Lead Educator</p>
+            <p class="teacher-bio">Specializes in early childhood psychology and creating supportive classrooms.</p>
+            <div class="teacher-socials">
+              <a href="#" class="teacher-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="teacher-social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="orbit-member">
+            <div class="orbit-photo-box">
+              <img src="images/teacher_david.jpg" alt="David Miller" class="orbit-photo" style="border-color: var(--secondary);">
+              <span class="experience-chip" style="background: linear-gradient(135deg, var(--secondary), #00D2D3); color:#fff;">7 Yrs Exp</span>
+            </div>
+            <h3 class="teacher-name">David Miller, B.S.</h3>
+            <p class="teacher-role" style="color: #00D2D3;">STEM & Montessori Guide</p>
+            <p class="teacher-bio">Passionate about making math and nature science exciting through play.</p>
+            <div class="teacher-socials">
+              <a href="#" class="teacher-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="teacher-social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="orbit-member">
+            <div class="orbit-photo-box">
+              <img src="images/teacher_elena.jpg" alt="Elena Rostova" class="orbit-photo" style="border-color: var(--accent-yellow);">
+              <span class="experience-chip">8 Yrs Exp</span>
+            </div>
+            <h3 class="teacher-name">Elena Rostova</h3>
+            <p class="teacher-role" style="color: #FF9F43;">Arts & Music Director</p>
+            <p class="teacher-bio">Guides children through rhythm, watercolor painting, and dramatic play.</p>
+            <div class="teacher-socials">
+              <a href="#" class="teacher-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="teacher-social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="orbit-member">
+            <div class="orbit-photo-box">
+              <img src="images/teacher_maya.jpg" alt="Maya Patel" class="orbit-photo" style="border-color: var(--accent-green);">
+              <span class="experience-chip" style="background: linear-gradient(135deg, var(--accent-green), #10AC84); color:#fff;">6 Yrs Exp</span>
+            </div>
+            <h3 class="teacher-name">Maya Patel</h3>
+            <p class="teacher-role" style="color: var(--accent-green);">Infant & Toddler Specialist</p>
+            <p class="teacher-bio">Dedicated to infant caregiving, sensory milestones, and quiet sleep routines.</p>
+            <div class="teacher-socials">
+              <a href="#" class="teacher-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="teacher-social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: PARENTS' TESTIMONIALS (#testimonials) - PARENT STORYTELLING HUB
+         ========================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-comments"></i> Parent Stories</span>
+          <h2 class="section-title">What Families Love About Us</h2>
+          <p class="section-desc">
+            Read real stories from parents who trust LittleStars with their children's early education.
+          </p>
+        </div>
+
+        <div class="storytelling-hub-grid">
+          <!-- Left Column: Hero Parent Feature Frame -->
+          <div class="parent-hero-frame">
+            <div class="parent-hero-img-box">
+              <img src="images/parent_review.jpg" alt="Jessica & Liam Vance - Parents at LittleStars">
+              <div class="parent-top-rating-badge">
+                <i class="fa-solid fa-star"></i> 5.0 Rating • Verified Parent Story
+              </div>
+              <div class="parent-hero-quote-box">
+                <i class="fa-solid fa-quote-left quote-mini-ic"></i>
+                <p class="parent-quote-body">
+                  "LittleStars has been an absolute blessing! Emma was shy at first, but within weeks she bloomed into a confident, expressive toddler. The teachers treat every child like family."
+                </p>
+                <div class="parent-hero-author">
+                  <h4>Jessica & Liam Vance</h4>
+                  <p>Parents of Emma (3 Yrs)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 3 Pastel Feedback Cards -->
+          <div class="feedback-cards-stack">
+            <!-- Feedback Card 1 -->
+            <div class="feedback-card fb-card-coral">
+              <div class="fb-card-header">
+                <div class="fb-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="fb-verified-tag">Verified Review</span>
+              </div>
+              <p class="fb-quote-text">
+                "The daily digital activity logs and live video check-ins give my wife and me complete peace of mind while working. The facility is immaculately clean!"
+              </p>
+              <div class="fb-author-row">
+                <img src="images/parent_michael.jpg" alt="Michael Reynolds" class="fb-author-img">
+                <div class="fb-author-info">
+                  <h5>Michael Reynolds</h5>
+                  <p>Father of Noah (2 Yrs)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feedback Card 2 -->
+            <div class="feedback-card fb-card-blue">
+              <div class="fb-card-header">
+                <div class="fb-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="fb-verified-tag">Verified Review</span>
+              </div>
+              <p class="fb-quote-text">
+                "Their STEM and creative arts curriculum is top-tier! My son comes home excited every single day talking about science experiments and storytime."
+              </p>
+              <div class="fb-author-row">
+                <img src="images/parent_priya.jpg" alt="Priya Sharma" class="fb-author-img">
+                <div class="fb-author-info">
+                  <h5>Priya Sharma</h5>
+                  <p>Mother of Aarav (4 Yrs)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feedback Card 3 -->
+            <div class="feedback-card fb-card-yellow">
+              <div class="fb-card-header">
+                <div class="fb-stars">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="fb-verified-tag">Verified Review</span>
+              </div>
+              <p class="fb-quote-text">
+                "Warm, attentive infant teachers. The transition back to work was completely effortless, reassuring, and full of loving guidance!"
+              </p>
+              <div class="fb-author-row">
+                <img src="images/parent_chloe_avatar.jpg" alt="Chloe Bennett" class="fb-author-img">
+                <div class="fb-author-info">
+                  <h5>David & Chloe Bennett</h5>
+                  <p>Parents of Maya (1.5 Yrs)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: BOOK A TOUR & CONTACT (#contact) - BORDERLESS FORM & OPEN INFO
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Underline Form Column -->
+          <div class="borderless-form-column">
+            <h3>Schedule a Free Campus Tour</h3>
+            <p>Come meet our teachers, explore our playrooms, and experience LittleStars firsthand.</p>
+
+            <form class="tour-form-clean" onsubmit="event.preventDefault(); alert('Thank you! Your campus tour request has been received.');">
+              <div class="form-row">
+                <div class="form-field-underline">
+                  <label for="parent-name">Parent's Full Name</label>
+                  <input type="text" id="parent-name" placeholder="e.g. Sarah Jenkins" required>
+                </div>
+                <div class="form-field-underline">
+                  <label for="child-age">Child's Age</label>
+                  <select id="child-age" required>
+                    <option value="">Select Age Group</option>
+                    <option value="infant">Infant (0-18 months)</option>
+                    <option value="toddler">Toddler (1.5-3 years)</option>
+                    <option value="preschool">Preschool (3-5 years)</option>
+                    <option value="afterschool">After School (5-10 years)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field-underline">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-field-underline">
+                  <label for="contact-phone">Phone Number</label>
+                  <input type="tel" id="contact-phone" placeholder="+1 (555) 000-0000" required>
+                </div>
+              </div>
+
+              <div class="form-field-underline">
+                <label for="tour-date">Preferred Tour Date</label>
+                <input type="date" id="tour-date" required>
+              </div>
+
+              <div class="form-field-underline">
+                <label for="tour-notes">Special Requests or Questions</label>
+                <textarea id="tour-notes" rows="2" placeholder="Tell us any specific requirements..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-tour">
+                Schedule Tour Now <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right Open Facility Info Column -->
+          <div class="open-facility-column">
+            <img src="images/daycare_facility.jpg" alt="LittleStars Daycare Center exterior building" class="facility-open-photo">
+
+            <div class="facility-open-info">
+              <div class="facility-info-row">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <h5>Our Location</h5>
+                  <p>123 Sunshine Boulevard, Early Education District, CA 90210</p>
+                </div>
+              </div>
+
+              <div class="facility-info-row">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                  <h5>Center Operating Hours</h5>
+                  <p>Monday – Friday: 07:00 AM – 06:30 PM<br>Saturday: 08:00 AM – 01:00 PM (Weekend Care)</p>
+                </div>
+              </div>
+
+              <div class="facility-info-row">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <h5>Direct Contact</h5>
+                  <p>Call: +1 (555) 234-5678<br>Email: hello@littlestarschildcare.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL COMPONENT
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

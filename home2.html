@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LittleStars Childcare & Daycare Center - STEAM & Outdoor Academy (Home 2)</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT (EXACT MATCH TO INDEX.HTML)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle active">
+              <span id="current-home-text">Home 2</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1" style="display:none;">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER - HOME 2 UNIQUE SECTIONS (7 SECTIONS)
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: FULL-SCREEN BACKGROUND IMAGE STEAM HERO SHOWCASE (#hero)
+         ========================================================================== -->
+    <section class="h2-hero-fullscreen" id="hero">
+      <div class="h2-hero-overlay"></div>
+      <div class="container h2-hero-full-container">
+        <div class="h2-hero-full-content">
+          <div class="h2-badge-glow">
+            <i class="fa-solid fa-atom"></i> Next-Gen STEAM & Outdoor Academy
+          </div>
+          <h1 class="h2-hero-full-title">
+            Where Young Minds Discover <span>Robotics, Nature & Scientific Wonders</span>
+          </h1>
+          <p class="h2-hero-full-desc">
+            An inquiry-driven early education environment combining hands-on robotics, organic gardening, sensory physics, and daily eco-forest exploration.
+          </p>
+          <div class="h2-hero-full-actions">
+            <a href="contact.html" class="h2-btn-primary">
+              Book a STEAM Tour <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="about.html" class="h2-btn-ghost-light">
+              <i class="fa-solid fa-shapes"></i> Explore STEAM Tracks
+            </a>
+          </div>
+
+          <!-- Glassmorphism Feature Spec Bar -->
+          <div class="h2-full-spec-bar">
+            <div class="h2-spec-glass">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>100% Safe Facility</strong>
+                <span>24/7 CCTV & Secure Access</span>
+              </div>
+            </div>
+            <div class="h2-spec-glass">
+              <i class="fa-solid fa-flask"></i>
+              <div>
+                <strong>100+ Experiments</strong>
+                <span>Physics & Chemistry Play</span>
+              </div>
+            </div>
+            <div class="h2-spec-glass">
+              <i class="fa-solid fa-tree"></i>
+              <div>
+                <strong>Daily Nature Trails</strong>
+                <span>Organic Botany & Gardening</span>
+              </div>
+            </div>
+            <div class="h2-spec-glass">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <strong>Certified Mentors</strong>
+                <span>Early Child STEM Inquiry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: INTERACTIVE BENTO STEAM PILLARS (#about)
+         ========================================================================== -->
+    <section class="h2-pillars-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-cubes"></i> Early Learning Tracks</span>
+          <h2 class="section-title">4 Pillars of STEAM & Cognitive Exploration</h2>
+          <p class="section-desc">Our curriculum weaves scientific inquiry with artistic play to build problem-solving confidence.</p>
+        </div>
+
+        <div class="h2-bento-grid">
+          <!-- Pillar 1: Science & Nature -->
+          <div class="h2-bento-item bento-science">
+            <div class="h2-bento-icon"><i class="fa-solid fa-dna"></i></div>
+            <div class="h2-bento-content">
+              <span class="h2-track-tag">Track 01</span>
+              <h3>Natural Sciences & Biology</h3>
+              <p>Studying seed germination, soil compost biology, and butterfly metamorphosis through direct observation.</p>
+              <ul class="h2-check-list">
+                <li><i class="fa-solid fa-check"></i> Daily Organic Soil & Worm Lab</li>
+                <li><i class="fa-solid fa-check"></i> Weather Observation Station</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Robotics & Logic -->
+          <div class="h2-bento-item bento-tech">
+            <div class="h2-bento-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="h2-bento-content">
+              <span class="h2-track-tag">Track 02</span>
+              <h3>Tactile Robotics & Coding</h3>
+              <p>Unplugged wooden coding blocks and tactile robot buggies that teach cause-and-effect logic.</p>
+              <ul class="h2-check-list">
+                <li><i class="fa-solid fa-check"></i> Screen-Free Coding Blocks</li>
+                <li><i class="fa-solid fa-check"></i> Spatial Orientation Puzzles</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Engineering Media Frame -->
+          <div class="h2-bento-item bento-media">
+            <img src="images/h2_steam_lab.jpg" alt="Preschool children building with wood blocks and toy robotics">
+            <div class="h2-media-overlay">
+              <span class="h2-live-chip"><i class="fa-solid fa-gear"></i> Building Architecture</span>
+              <h4>Hands-on Engineering Studio</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: ECO-FOREST & BOTANY GARDEN EXPERIENCE HUB (#programs)
+         ========================================================================== -->
+    <section class="h2-eco-hub-section" id="programs">
+      <div class="container">
+        <!-- Section Top Centered Showcase Header -->
+        <div class="h2-eco-header">
+          <span class="h2-eco-badge"><i class="fa-solid fa-seedling"></i> Forest & Eco School</span>
+          <h2>Nurturing Young Eco-Explorers in a 1-Acre Living Classroom</h2>
+          <p>Rain or shine, our children step outdoors daily into a fenced botanical sanctuary to cultivate organic crops, track weather systems, and explore sensory mud physics.</p>
+        </div>
+
+        <!-- 3-Column Asymmetric Hub Grid -->
+        <div class="h2-eco-hub-grid">
+          <!-- Column 1: Central Organic Circular Media Orb -->
+          <div class="h2-eco-orb-col">
+            <div class="h2-eco-circle-frame">
+              <img src="images/h2_outdoor_garden.jpg" alt="Toddlers planting vegetables and flowers in outdoor garden">
+              <div class="h2-eco-floating-tag">
+                <i class="fa-solid fa-leaf"></i> 100% Organic Soil & Garden Sanctuary
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Farm-to-Table Hero Feature Card -->
+          <div class="h2-eco-card hero-eco-card">
+            <div class="h2-eco-icon-badge e-green">
+              <i class="fa-solid fa-carrot"></i>
+            </div>
+            <h3>Farm-to-Plate Dining</h3>
+            <p>Children sow heirloom seeds, nurture compost soil, and harvest seasonal veggies that our chef prepares for warm organic daily lunches.</p>
+            <div class="h2-eco-stat-pill">
+              <strong>100% Kids Grown</strong>
+              <span>Zero-Pesticide Produce</span>
+            </div>
+          </div>
+
+          <!-- Column 3: Dual Stacked Innovation Wave Cards -->
+          <div class="h2-eco-dual-stack">
+            <div class="h2-eco-card sub-eco-card">
+              <div class="h2-eco-icon-badge e-blue">
+                <i class="fa-solid fa-water"></i>
+              </div>
+              <div>
+                <h4>Water Physics & Gravity Chutes</h4>
+                <p>Exploring fluid motion, water wheels, and buoyancy experiments in bamboo stream beds.</p>
+              </div>
+            </div>
+
+            <div class="h2-eco-card sub-eco-card">
+              <div class="h2-eco-icon-badge e-yellow">
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <div>
+                <h4>Solar & Wind Weather Station</h4>
+                <p>Child meteorologists track daily temperature, anemometer wind speeds, and cloud formations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Horizontal Feature Ribbon -->
+        <div class="h2-eco-ribbon">
+          <div class="h2-ribbon-item"><i class="fa-solid fa-worm"></i> Worm Composting Lab</div>
+          <div class="h2-ribbon-item"><i class="fa-solid fa-droplet"></i> Rainwater Catchment</div>
+          <div class="h2-ribbon-item"><i class="fa-solid fa-crow"></i> Bird Sanctuary & Feeders</div>
+          <div class="h2-ribbon-item"><i class="fa-solid fa-sun"></i> Solar Bug Trackers</div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================================================
+         SECTION 5: DYNAMIC STEAM JOURNEY & ORGANIC FEAST (#routine)
+         ========================================================================== -->
+    <section class="h2-routine-section" id="routine">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-clock"></i> Daily STEAM Flow</span>
+          <h2 class="section-title">A Day of Balanced STEAM Discovery & Nutrition</h2>
+          <p class="section-desc">Structure meets creative freedom in our daily learning schedule.</p>
+        </div>
+
+        <div class="h2-routine-wrapper">
+          <!-- Routine Hero Showcase Image -->
+          <div class="h2-routine-banner">
+            <img src="images/h2_daily_routine.jpg" alt="Group of happy toddlers enjoying healthy organic lunch feast at daycare table">
+            <div class="h2-routine-banner-text">
+              <h3>Farm-to-Table Organic Lunch & Mindful Rest</h3>
+              <p>Chef-prepared organic meals sourced directly from our daycare garden and local farms.</p>
+            </div>
+          </div>
+
+          <!-- Horizontal Arc Timeline Steps -->
+          <div class="h2-arc-steps">
+            <div class="h2-step-card">
+              <div class="h2-step-num">08:30 AM</div>
+              <h4>Morning Spark Circle</h4>
+              <p>Sensory greeting, morning goals, and weather monitor check-in.</p>
+            </div>
+
+            <div class="h2-step-card active">
+              <div class="h2-step-num">10:00 AM</div>
+              <h4>Hands-On STEAM Lab</h4>
+              <p>Building blocks, robotics logic, and prism light experiments.</p>
+            </div>
+
+            <div class="h2-step-card">
+              <div class="h2-step-num">12:15 PM</div>
+              <h4>Organic Farm Feast</h4>
+              <p>Nutritious warm lunch prepared fresh from our garden produce.</p>
+            </div>
+
+            <div class="h2-step-card">
+              <div class="h2-step-num">02:00 PM</div>
+              <h4>Eco-Forest Trail & Mud Play</h4>
+              <p>Garden exploration, mud kitchen creations, and outdoor storytime.</p>
+            </div>
+
+            <div class="h2-step-card">
+              <div class="h2-step-num">04:30 PM</div>
+              <h4>Creative Art & Reflections</h4>
+              <p>Freestyle painting, musical relaxation, and parent debrief.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: CERTIFIED STEAM MENTORS GUILD (#teachers)
+         ========================================================================== -->
+    <section class="h2-specialists-section" id="teachers">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Expert Faculty</span>
+          <h2 class="section-title">Meet Our STEAM Mentors & Specialists</h2>
+          <p class="section-desc">Dedicated educators specializing in early child psychology, STEM logic, and sensory arts.</p>
+        </div>
+
+        <div class="h2-mentor-grid">
+          <!-- Mentor 1: Featured STEAM Lead -->
+          <div class="h2-mentor-card">
+            <div class="h2-mentor-img-frame">
+              <img src="images/h2_teacher_steam.jpg" alt="Dr. Amanda Vance STEAM Educator">
+              <div class="h2-specialty-badge"><i class="fa-solid fa-star"></i> Lead STEAM Specialist</div>
+            </div>
+            <div class="h2-mentor-info">
+              <h3>Dr. Amanda Vance, Ph.D.</h3>
+              <p class="h2-mentor-role">Head of Early Child STEM Inquiry</p>
+              <p class="h2-mentor-bio">14+ years experience designing tactile physics and nature-based play programs for toddlers.</p>
+              <div class="h2-mentor-tags">
+                <span><i class="fa-solid fa-award"></i> Master Educator</span>
+                <span><i class="fa-solid fa-heart-pulse"></i> First Aid Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor 2: Eco-Forest Guide -->
+          <div class="h2-mentor-card">
+            <div class="h2-mentor-img-frame">
+              <img src="images/h2_teacher_david_eco.jpg" alt="David Miller Eco-Forest Instructor">
+              <div class="h2-specialty-badge badge-green"><i class="fa-solid fa-leaf"></i> Eco-Forest Guide</div>
+            </div>
+            <div class="h2-mentor-info">
+              <h3>David Miller, B.Ed.</h3>
+              <p class="h2-mentor-role">Eco-Forest & Botany Guide</p>
+              <p class="h2-mentor-bio">Certified Wilderness Educator passionate about teaching kids organic farming and outdoor survival basics.</p>
+              <div class="h2-mentor-tags">
+                <span><i class="fa-solid fa-tree"></i> Wilderness Guide</span>
+                <span><i class="fa-solid fa-seedling"></i> Botany Expert</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mentor 3: Sensory Art Master -->
+          <div class="h2-mentor-card">
+            <div class="h2-mentor-img-frame">
+              <img src="images/h2_teacher_sarah_art.jpg" alt="Sarah Jenkins Sensory Art Specialist">
+              <div class="h2-specialty-badge badge-purple"><i class="fa-solid fa-palette"></i> Sensory Art Mentor</div>
+            </div>
+            <div class="h2-mentor-info">
+              <h3>Sarah Jenkins, M.A.</h3>
+              <p class="h2-mentor-role">Sensory Art & Sound Mentor</p>
+              <p class="h2-mentor-bio">Pioneer in color therapy and early acoustic exploration through natural instruments.</p>
+              <div class="h2-mentor-tags">
+                <span><i class="fa-solid fa-paint-brush"></i> Color Therapist</span>
+                <span><i class="fa-solid fa-music"></i> Sound Specialist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: ADMISSIONS & PRIVATE CAMPUS TOUR (#contact)
+         ========================================================================== -->
+    <section class="h2-enrollment-section" id="contact">
+      <div class="container">
+        <div class="h2-enrollment-grid">
+          <!-- Left Info Column -->
+          <div class="h2-enroll-info">
+            <span class="h2-enroll-tag"><i class="fa-solid fa-paper-plane"></i> Book Your Visit</span>
+            <h2>Experience LittleStars STEAM Academy</h2>
+            <p>Schedule a 30-minute interactive campus tour where you and your child can try our STEAM Lab hands-on.</p>
+
+            <div class="h2-tour-media-preview">
+              <img src="images/h2_campus_tour.jpg" alt="Parents and child walking through bright modern daycare reception">
+              <div class="h2-tour-chip">
+                <i class="fa-solid fa-calendar-check"></i> Tours Available Mon–Fri (9 AM & 3 PM)
+              </div>
+            </div>
+
+            <div class="h2-perk-list">
+              <div><i class="fa-solid fa-circle-check"></i> Free STEAM Starter Kit for Child</div>
+              <div><i class="fa-solid fa-circle-check"></i> 1-on-1 Q&A with Lead Mentors</div>
+            </div>
+          </div>
+
+          <!-- Right Form Column -->
+          <div class="h2-enroll-form-wrap">
+            <h3>Book a Private STEAM Tour</h3>
+            <form class="h2-form" onsubmit="event.preventDefault(); alert('Thank you! Your STEAM Lab Tour request has been received. Our team will contact you shortly.');">
+              <div class="h2-input-group">
+                <label for="h2-parent-name">Parent / Guardian Name</label>
+                <input type="text" id="h2-parent-name" placeholder="e.g. Jessica Taylor" required>
+              </div>
+
+              <div class="h2-input-row">
+                <div class="h2-input-group">
+                  <label for="h2-email">Email Address</label>
+                  <input type="email" id="h2-email" placeholder="name@domain.com" required>
+                </div>
+                <div class="h2-input-group">
+                  <label for="h2-phone">Phone Number</label>
+                  <input type="tel" id="h2-phone" placeholder="(555) 000-0000" required>
+                </div>
+              </div>
+
+              <div class="h2-input-row">
+                <div class="h2-input-group">
+                  <label for="h2-child-age">Child's Age Group</label>
+                  <select id="h2-child-age">
+                    <option>Infant STEAM (6–18 months)</option>
+                    <option selected>Toddler STEAM (1.5–3 years)</option>
+                    <option>Preschool STEAM (3–5 years)</option>
+                  </select>
+                </div>
+                <div class="h2-input-group">
+                  <label for="h2-tour-date">Preferred Tour Date</label>
+                  <input type="date" id="h2-tour-date" required>
+                </div>
+              </div>
+
+              <div class="h2-input-group">
+                <label for="h2-notes">Special Interests or Questions</label>
+                <textarea id="h2-notes" rows="3" placeholder="Tell us about your child's favorite hobbies (e.g. loves blocks, nature, painting)..."></textarea>
+              </div>
+
+              <button type="submit" class="h2-submit-btn">
+                Confirm STEAM Tour Request <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT (EXACT MATCH TO INDEX.HTML)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL COMPONENT (EXACT MATCH TO INDEX.HTML)
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

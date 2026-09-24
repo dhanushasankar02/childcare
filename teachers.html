@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Teachers & Certified Educators - LittleStars Childcare Center</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER NAVBAR COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fa-solid fa-child-reaching"></i>
+          </div>
+          <span>Little<strong>Stars</strong></span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown" id="home-dropdown">
+            <a href="#" class="nav-link dropdown-toggle">
+              <span id="current-home-text">Home 1</span> <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="index.html" id="select-home1">
+                  <i class="fa-solid fa-house"></i> Home 1 <span class="badge" id="badge-home1" style="display:none;">Active</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="home2.html" id="select-home2">
+                  <i class="fa-solid fa-cloud-sun"></i> Home 2 <span class="badge" id="badge-home2" style="display:none;">Active</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Navigation Links -->
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="philosophy.html" class="nav-link">Philosophy</a></li>
+          <li class="nav-item"><a href="programs.html" class="nav-link">Programs</a></li>
+          <li class="nav-item"><a href="teachers.html" class="nav-link active">Teachers</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right Side Utilities (Dark Mode, RTL, Login) -->
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle Button -->
+          <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!-- RTL Layout Switcher Button -->
+          <button class="icon-btn rtl-toggle-btn" id="rtl-toggle-btn" title="Switch to RTL Mode">
+            <i class="fa-solid fa-globe"></i>
+            <span id="rtl-label">RTL</span>
+          </button>
+
+          <!-- Parent / Staff Portal Login Button -->
+          <a href="login.html" class="btn-login" id="login-btn">
+            <i class="fa-solid fa-user-lock"></i>
+            <span>Portal Login</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER - TEACHERS.HTML 7 UNIQUE DESIGN SECTIONS
+       ========================================================================== -->
+  <main class="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: CERTIFIED EDUCATOR EXCELLENCE HERO (#teach-hero)
+         ========================================================================== -->
+    <section class="teach-hero-section" id="teach-hero">
+      <div class="container">
+        <div class="teach-hero-grid">
+          <div class="teach-hero-text">
+            <div class="teach-hero-badge">
+              <i class="fa-solid fa-user-graduate"></i> Certified Early Childhood Specialists
+            </div>
+            <h1 class="teach-hero-title">
+              Nurturing Minds With <span>Heart, Expertise & Passion</span>
+            </h1>
+            <p class="teach-hero-desc">
+              Our faculty comprises certified educators, speech specialists, and child development leaders who bring warmth, security, and innovative inquiry to every classroom.
+            </p>
+
+            <div class="teach-stats-row">
+              <div class="teach-stat-pill">
+                <strong>100%</strong>
+                <span>Background Checked</span>
+              </div>
+              <div class="teach-stat-pill">
+                <strong>8+ Yrs</strong>
+                <span>Avg Experience</span>
+              </div>
+              <div class="teach-stat-pill">
+                <strong>CPR</strong>
+                <span>Certified Team</span>
+              </div>
+              <div class="teach-stat-pill">
+                <strong>94%</strong>
+                <span>Retention Rate</span>
+              </div>
+            </div>
+
+            <div class="teach-hero-actions">
+              <a href="#teach-faculty" class="btn-primary">
+                Meet Our Department Heads <i class="fa-solid fa-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="teach-hero-media">
+            <div class="teach-hero-frame">
+              <img src="images/teach_hero_team.jpg" alt="Group of diverse smiling early childhood teachers in bright classroom">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: DEPARTMENT HEAD FACULTY SHOWCASE (#teach-faculty)
+         ========================================================================== -->
+    <section class="teach-faculty-section" id="teach-faculty">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-award"></i> Leadership Team</span>
+          <h2 class="section-title">Meet Our Lead Faculty & Specialists</h2>
+          <p class="section-desc">Our department directors design accredited curriculum pathways and guide classroom excellence every day.</p>
+        </div>
+
+        <div class="teach-faculty-grid">
+          <!-- Lead 1 -->
+          <div class="teach-faculty-card">
+            <div class="teach-faculty-thumb">
+              <img src="images/teach_sarah_lead.jpg" alt="Sarah Jenkins Lead Pre-K Teacher">
+              <span class="teach-faculty-role">Pre-K Director</span>
+            </div>
+            <div class="teach-faculty-body">
+              <div>
+                <h3>Sarah Jenkins</h3>
+                <span class="degree">M.Ed. Early Childhood Literacy</span>
+                <p>"Childhood is a journey of joyful discovery. We empower Pre-K learners to ask bold questions."</p>
+              </div>
+              <div class="teach-faculty-meta">
+                <span><i class="fa-solid fa-clock"></i> 9 Yrs at Center</span>
+                <span><i class="fa-solid fa-certificate"></i> Reggio Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lead 2 -->
+          <div class="teach-faculty-card">
+            <div class="teach-faculty-thumb">
+              <img src="images/teach_david_lead.jpg" alt="David Miller STEAM Lab Specialist">
+              <span class="teach-faculty-role">STEAM Lead</span>
+            </div>
+            <div class="teach-faculty-body">
+              <div>
+                <h3>David Miller</h3>
+                <span class="degree">B.S. Elementary Education & STEM</span>
+                <p>"Building robot blocks and color mixing shows children that science is a playground."</p>
+              </div>
+              <div class="teach-faculty-meta">
+                <span><i class="fa-solid fa-clock"></i> 7 Yrs at Center</span>
+                <span><i class="fa-solid fa-certificate"></i> LEGO STEM Master</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lead 3 -->
+          <div class="teach-faculty-card">
+            <div class="teach-faculty-thumb">
+              <img src="images/teach_faculty_lead.jpg" alt="Dr. Maria Rodriguez Inclusion Director">
+              <span class="teach-faculty-role">Inclusion Director</span>
+            </div>
+            <div class="teach-faculty-body">
+              <div>
+                <h3>Dr. Maria Rodriguez</h3>
+                <span class="degree">Ph.D. Pediatric Special Care</span>
+                <p>"Every child deserves an adaptive environment where neurodiverse strengths are celebrated."</p>
+              </div>
+              <div class="teach-faculty-meta">
+                <span><i class="fa-solid fa-clock"></i> 11 Yrs at Center</span>
+                <span><i class="fa-solid fa-certificate"></i> Speech & OT Specialist</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lead 4 -->
+          <div class="teach-faculty-card">
+            <div class="teach-faculty-thumb">
+              <img src="images/teach_elena_lead.jpg" alt="Elena Rostova Infant Nursery Supervisor">
+              <span class="teach-faculty-role">Nursery Supervisor</span>
+            </div>
+            <div class="teach-faculty-body">
+              <div>
+                <h3>Elena Rostova</h3>
+                <span class="degree">B.A. Child Psychology & Nurture</span>
+                <p>"Gentle touch and acoustic lullabies create the secure foundation infants need to thrive."</p>
+              </div>
+              <div class="teach-faculty-meta">
+                <span><i class="fa-solid fa-clock"></i> 8 Yrs at Center</span>
+                <span><i class="fa-solid fa-certificate"></i> Infant CPR Specialist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: PROFESSIONAL TRAINING & SAFETY (#teach-train) - DARK BOX
+         ========================================================================== -->
+    <section class="teach-train-section" id="teach-train">
+      <div class="container">
+        <div class="teach-train-box">
+          <div class="teach-train-grid">
+            <div class="teach-train-text">
+              <span class="section-tag green-tag"><i class="fa-solid fa-shield-heart"></i> Safety & Training</span>
+              <h2>100+ Hours Annual Professional Development</h2>
+              <p>Education evolves constantly. Our teachers complete over 100 hours of continuous training each year in pediatric medical response, allergy safety, and positive behavior guidance.</p>
+
+              <div class="teach-cert-grid">
+                <div class="teach-cert-item">
+                  <i class="fa-solid fa-kit-medical"></i>
+                  <div>
+                    <strong>Pediatric First Aid & CPR</strong>
+                    <span>Bi-annual recertification</span>
+                  </div>
+                </div>
+
+                <div class="teach-cert-item">
+                  <i class="fa-solid fa-user-shield"></i>
+                  <div>
+                    <strong>Background Verification</strong>
+                    <span>FBI & State fingerprint clearance</span>
+                  </div>
+                </div>
+
+                <div class="teach-cert-item">
+                  <i class="fa-solid fa-apple-whole"></i>
+                  <div>
+                    <strong>Allergy & EpiPen Protocol</strong>
+                    <span>Certified medical safety training</span>
+                  </div>
+                </div>
+
+                <div class="teach-cert-item">
+                  <i class="fa-solid fa-brain"></i>
+                  <div>
+                    <strong>Trauma-Informed Care</strong>
+                    <span>Mindful emotional regulation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="teach-train-media">
+              <div class="teach-train-frame">
+                <img src="images/teach_training_workshop.jpg" alt="Teachers attending pediatric first aid and CPR training workshop">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: DUAL-TEACHER CO-TEACHING MODEL (#teach-ratio) - RATIO CARDS
+         ========================================================================== -->
+    <section class="teach-ratio-section" id="teach-ratio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag blue-tag"><i class="fa-solid fa-users-gear"></i> Low Ratio Promise</span>
+          <h2 class="section-title">Dual-Teacher Co-Teaching Model</h2>
+          <p class="section-desc">Every classroom features a Lead Educator and an Assistant Teacher, ensuring your child receives continuous support and observation.</p>
+        </div>
+
+        <div class="teach-ratio-split">
+          <div class="teach-ratio-frame">
+            <img src="images/teach_coteaching_classroom.jpg" alt="Two co-teachers reading a story book to young toddlers in reading nook">
+          </div>
+
+          <div class="teach-ratio-cards">
+            <div class="teach-ratio-card">
+              <div class="teach-ratio-num">1:3</div>
+              <div>
+                <h4>Infant Sanctuary</h4>
+                <p>3 babies per dedicated nursery specialist.</p>
+              </div>
+            </div>
+
+            <div class="teach-ratio-card">
+              <div class="teach-ratio-num">1:4</div>
+              <div>
+                <h4>Toddler Playroom</h4>
+                <p>4 toddlers per active movement educator.</p>
+              </div>
+            </div>
+
+            <div class="teach-ratio-card">
+              <div class="teach-ratio-num">1:8</div>
+              <div>
+                <h4>Preschool Pre-K</h4>
+                <p>8 children per certified Pre-K lead teacher.</p>
+              </div>
+            </div>
+
+            <div class="teach-ratio-card">
+              <div class="teach-ratio-num">1:10</div>
+              <div>
+                <h4>After-School Club</h4>
+                <p>10 students per robotics & study tutor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: REAL-TIME PARENT APP COMMUNICATION (#teach-app-parent)
+         ========================================================================== -->
+    <section class="teach-app-section" id="teach-app-parent">
+      <div class="container">
+        <div class="teach-app-box">
+          <div class="teach-app-split">
+            <div class="teach-app-text">
+              <span class="section-tag purple-tag"><i class="fa-solid fa-mobile-screen-button"></i> Digital Connection</span>
+              <h2>Real-Time Daily Photo & Learning Updates</h2>
+              <p>Never miss a milestone! Our educators record daily photos, meal portions, nap durations, and learning portfolios directly onto your smartphone.</p>
+
+              <div class="teach-app-list">
+                <div class="teach-app-item">
+                  <i class="fa-solid fa-camera"></i>
+                  <div>
+                    <strong>Live Activity Photos & Videos</strong>
+                    <span>High-definition moments delivered straight to your feed.</span>
+                  </div>
+                </div>
+
+                <div class="teach-app-item">
+                  <i class="fa-solid fa-utensils"></i>
+                  <div>
+                    <strong>Organic Meal & Nap Tracking</strong>
+                    <span>Detailed logs of food intake and rest schedules.</span>
+                  </div>
+                </div>
+
+                <div class="teach-app-item">
+                  <i class="fa-solid fa-message"></i>
+                  <div>
+                    <strong>Direct Teacher Direct Messaging</strong>
+                    <span>Instant private messaging between parents and classroom leads.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="teach-app-media">
+              <div class="teach-app-frame">
+                <img src="images/teach_app_communication.jpg" alt="Teacher taking tablet photo of toddler painting activity to share with parents">
+                <div class="teach-app-badge">
+                  <i class="fa-solid fa-shield-halved"></i> 256-Bit Encrypted Secure Parent App
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: TEACHER WELLBEING & CULTURE (#teach-culture) - 3 CARDS & BANNER
+         ========================================================================== -->
+    <section class="teach-culture-section" id="teach-culture">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag green-tag"><i class="fa-solid fa-heart"></i> Workplace Excellence</span>
+          <h2 class="section-title">Why Our Teachers Stay: Supportive Workplace Culture</h2>
+          <p class="section-desc">Happy educators create joyful classrooms. We support our team with wellness benefits, low stress ratios, and continuous career support.</p>
+        </div>
+
+        <div class="teach-culture-grid">
+          <div class="teach-culture-card">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <h3>Paid Wellness Days</h3>
+            <p>Generous personal leave and mental wellness days to keep teachers energized.</p>
+          </div>
+
+          <div class="teach-culture-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Degree Funding</h3>
+            <p>100% tuition reimbursement for higher degrees in Early Childhood Education.</p>
+          </div>
+
+          <div class="teach-culture-card">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h3>Creative Autonomy</h3>
+            <p>Freedom to design custom classroom themes and Reggio-inspired discovery corners.</p>
+          </div>
+        </div>
+
+        <div class="teach-culture-banner">
+          <img src="images/teach_culture_lounge.jpg" alt="Teachers relaxing together in comfortable modern staff break lounge">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: EDUCATOR CAREERS & RECRUITMENT (#teach-careers)
+         ========================================================================== -->
+    <section class="teach-careers-section" id="teach-careers">
+      <div class="container">
+        <div class="teach-careers-box">
+          <div class="section-header">
+            <span class="section-tag purple-tag"><i class="fa-solid fa-briefcase"></i> Join Our Team</span>
+            <h2 class="section-title">Become a Part of the LittleStars Family</h2>
+            <p class="section-desc">We are hiring certified lead educators, assistant teachers, and pediatric specialists for our growing campus.</p>
+          </div>
+
+          <div class="teach-careers-split">
+            <div class="teach-careers-frame">
+              <img src="images/teach_careers_hiring.jpg" alt="Teacher interview candidate speaking warmly with center director in modern office">
+            </div>
+
+            <div class="teach-careers-body">
+              <div class="teach-jobs-list">
+                <div class="teach-job-row">
+                  <div>
+                    <strong>Lead Pre-K Educator</strong>
+                    <span>Full-Time • M.Ed. / B.S. Required</span>
+                  </div>
+                  <span class="teach-job-badge">Open Position</span>
+                </div>
+
+                <div class="teach-job-row">
+                  <div>
+                    <strong>Infant Care Nursery Specialist</strong>
+                    <span>Full-Time • Infant CPR Certified</span>
+                  </div>
+                  <span class="teach-job-badge">Open Position</span>
+                </div>
+
+                <div class="teach-job-row">
+                  <div>
+                    <strong>After-School STEAM Counselor</strong>
+                    <span>Part-Time • Robotics & Coding Background</span>
+                  </div>
+                  <span class="teach-job-badge">Open Position</span>
+                </div>
+              </div>
+
+              <a href="contact.html" class="btn-primary">Apply Now / Submit Resume <i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER COMPONENT (EXACT MATCH ACROSS ALL PAGES)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="brand-title">
+            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Little<strong>Stars</strong></span>
+          </div>
+          <p>
+            Providing high-quality early childhood education, play-based learning, and loving daycare services for infants, toddlers, and preschool children.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+            <li><a href="#schedule"><i class="fa-solid fa-chevron-right"></i> Schedule</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chevron-right"></i> Teachers</a></li>
+          </ul>
+        </div>
+
+        <!-- Home Options Selection -->
+        <div class="footer-column">
+          <h4>Layout Options</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" id="footer-link-home1"><i class="fa-solid fa-house"></i> View Home 1</a></li>
+            <li><a href="home2.html" id="footer-link-home2"><i class="fa-solid fa-cloud-sun"></i> View Home 2</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-star"></i> Parent Reviews</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-calendar-check"></i> Book a Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Contact -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p style="font-size:0.88rem; margin-bottom:12px;">Subscribe for daycare news, parenting tips & event updates.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to newsletter!');">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LittleStars Childcare & Daycare Center. Made with <i class="fa-solid fa-heart"></i> for Happy Children.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LOGIN MODAL COMPONENT
+       ========================================================================== -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-tab-title">Parent Portal Login</h3>
+        <button class="close-modal" id="close-modal-btn" title="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" id="tab-parent">Parent Portal</button>
+        <button class="modal-tab-btn" id="tab-staff">Staff Portal</button>
+      </div>
+
+      <div class="modal-body">
+        <form onsubmit="event.preventDefault(); alert('Logging in...');">
+          <div class="form-group">
+            <label for="login-email">Email or Username</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="login-email" placeholder="Enter your email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="••••••••" required>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-submit-login">Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Script -->
+  <script src="script.js"></script>
+</body>
+</html>

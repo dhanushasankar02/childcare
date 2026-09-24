@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LittleStars - New Family Registration</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="unitutor-login-body sticky-viewport">
+
+  <!-- Top Right Utility Buttons -->
+  <div class="unitutor-top-actions">
+    <a href="index.html" class="unitutor-icon-btn" title="Back to Home Website" style="width:auto; padding:0 14px; border-radius:999px; gap:6px; text-decoration:none; font-weight:800; font-size:0.8rem;">
+      <i class="fa-solid fa-arrow-left"></i> Home
+    </a>
+    <button class="unitutor-icon-btn" id="rtl-toggle-btn" title="Switch to LTR/RTL Layout">
+      <i class="fa-solid fa-right-left"></i>
+    </button>
+    <button class="unitutor-icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- Centered Registration Box Container (Compact Fixed Viewport Fit) -->
+  <main class="unitutor-login-wrapper compact-fit">
+    <div class="unitutor-card compact-card">
+      
+      <!-- Brand Logo Header (Clickable link to index.html) -->
+      <a href="index.html" class="unitutor-brand compact-brand" title="Return to Homepage" style="text-decoration:none;">
+        <div class="unitutor-logo-badge compact-badge">
+          <i class="fa-solid fa-child-reaching"></i>
+        </div>
+        <div class="unitutor-brand-text">
+          <h2>LittleStars<span>.</span></h2>
+          <p>NEW FAMILY REGISTRATION</p>
+        </div>
+      </a>
+
+      <!-- 3-Role Switcher -->
+      <div class="unitutor-role-switcher compact-switcher">
+        <button class="role-btn active" id="reg-role-parent">
+          <i class="fa-solid fa-user-plus"></i> Parent Register
+        </button>
+        <button class="role-btn" id="reg-role-teacher">
+          <i class="fa-solid fa-user-nurse"></i> Teacher Apply
+        </button>
+        <button class="role-btn" id="reg-role-partner">
+          <i class="fa-solid fa-handshake"></i> Partner
+        </button>
+      </div>
+
+      <!-- Registration Form in 2-Column Pairs -->
+      <form class="unitutor-form" onsubmit="event.preventDefault(); alert('Registration successful! Welcome to LittleStars Family. Redirecting to Portal...'); window.location.href='login.html';">
+        
+        <div class="unitutor-form-row">
+          <div class="unitutor-field compact-field">
+            <label><i class="fa-solid fa-user"></i> FULL NAME</label>
+            <input type="text" placeholder="e.g. Eleanor Vance" required>
+          </div>
+
+          <div class="unitutor-field compact-field">
+            <label><i class="fa-solid fa-envelope"></i> EMAIL ADDRESS</label>
+            <input type="email" placeholder="parent@example.com" required>
+          </div>
+        </div>
+
+        <div class="unitutor-form-row">
+          <div class="unitutor-field compact-field">
+            <label><i class="fa-solid fa-phone"></i> PHONE NUMBER</label>
+            <input type="tel" placeholder="(555) 234-5678" required>
+          </div>
+
+          <div class="unitutor-field compact-field">
+            <label><i class="fa-solid fa-shapes"></i> PROGRAM INTEREST</label>
+            <select required class="unitutor-select">
+              <option value="">Select Program</option>
+              <option>Infant Nest (6wks–12m)</option>
+              <option>Toddler Explorers (1–2.5y)</option>
+              <option>Preschool STEAM (3–5y)</option>
+              <option>After-School Club (6–12y)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="unitutor-form-row">
+          <div class="unitutor-field compact-field">
+            <label><i class="fa-solid fa-lock"></i> CREATE PASSWORD</label>
+            <input type="password" placeholder="••••••••••••" required>
+          </div>
+
+          <div class="unitutor-field compact-field">
+            <label><i class="fa-solid fa-lock"></i> CONFIRM PASSWORD</label>
+            <input type="password" placeholder="••••••••••••" required>
+          </div>
+        </div>
+
+        <div class="unitutor-options compact-options">
+          <label class="unitutor-remember" style="font-size: 0.78rem;">
+            <input type="checkbox" required checked>
+            <span>I agree to the <a href="#" style="color:var(--primary);">Terms of Service</a> & <a href="#" style="color:var(--primary);">Privacy Policy</a></span>
+          </label>
+        </div>
+
+        <button type="submit" class="unitutor-btn-primary compact-btn">
+          CREATE PARENT ACCOUNT &rarr;
+        </button>
+      </form>
+
+      <!-- Social Divider -->
+      <div class="unitutor-divider compact-divider">
+        <span>OR REGISTER WITH SOCIAL</span>
+      </div>
+
+      <!-- Social Login Buttons Row -->
+      <div class="unitutor-social-row compact-social">
+        <button type="button" class="unitutor-social-btn" onclick="alert('Registering with Google...');">
+          <i class="fa-brands fa-google" style="color:#EA4335;"></i> Google
+        </button>
+        
+        <button type="button" class="unitutor-social-btn" onclick="alert('Registering with Apple...');">
+          <i class="fa-brands fa-apple"></i> Apple
+        </button>
+        
+        <button type="button" class="unitutor-social-btn" onclick="alert('Registering with Microsoft...');">
+          <i class="fa-brands fa-microsoft" style="color:#00A4EF;"></i> Microsoft
+        </button>
+      </div>
+
+      <!-- Footer Prompt -->
+      <div class="unitutor-footer compact-footer" style="text-align: center;">
+        <span>Already have an account?</span>
+        <a href="login.html">Sign In</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    const regParent = document.getElementById('reg-role-parent');
+    const regTeacher = document.getElementById('reg-role-teacher');
+    const regPartner = document.getElementById('reg-role-partner');
+
+    regParent?.addEventListener('click', () => {
+      [regParent, regTeacher, regPartner].forEach(b => b?.classList.remove('active'));
+      regParent.classList.add('active');
+    });
+
+    regTeacher?.addEventListener('click', () => {
+      [regParent, regTeacher, regPartner].forEach(b => b?.classList.remove('active'));
+      regTeacher.classList.add('active');
+    });
+
+    regPartner?.addEventListener('click', () => {
+      [regParent, regTeacher, regPartner].forEach(b => b?.classList.remove('active'));
+      regPartner.classList.add('active');
+    });
+  </script>
+</body>
+</html>
