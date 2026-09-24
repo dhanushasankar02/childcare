@@ -4,15 +4,15 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Primary DOM Elements
+  // Primary DOM Elements (Query all instances for desktop + mobile menu)
   const htmlTag = document.documentElement;
   const bodyTag = document.body;
-  const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  const rtlToggleBtn = document.getElementById('rtl-toggle-btn');
-  const rtlLabel = document.getElementById('rtl-label');
+  const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn, #theme-toggle-btn');
+  const rtlToggleBtns = document.querySelectorAll('.rtl-toggle-btn, #rtl-toggle-btn');
+  const rtlLabels = document.querySelectorAll('.rtl-label, #rtl-label');
 
   // Login Modal Elements
-  const loginBtn = document.getElementById('login-btn');
+  const loginBtns = document.querySelectorAll('.login-btn, #login-btn');
   const loginModal = document.getElementById('login-modal');
   const closeModalBtn = document.getElementById('close-modal-btn');
   const parentTab = document.getElementById('tab-parent');
@@ -31,27 +31,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('childcare_theme') || 'light';
   applyTheme(savedTheme);
 
-  themeToggleBtn?.addEventListener('click', () => {
-    const currentTheme = htmlTag.getAttribute('data-theme') === 'dark' || bodyTag.classList.contains('dark-theme') ? 'dark' : 'light';
-    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(nextTheme);
+  themeToggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const currentTheme = htmlTag.getAttribute('data-theme') === 'dark' || bodyTag.classList.contains('dark-theme') ? 'dark' : 'light';
+      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme);
+    });
   });
 
   function applyTheme(theme) {
     if (theme === 'dark') {
       htmlTag.setAttribute('data-theme', 'dark');
       bodyTag.classList.add('dark-theme');
-      if (themeToggleBtn) {
-        themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-        themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
-      }
+      themeToggleBtns.forEach(btn => {
+        btn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        btn.setAttribute('title', 'Switch to Light Mode');
+      });
     } else {
       htmlTag.removeAttribute('data-theme');
       bodyTag.classList.remove('dark-theme');
-      if (themeToggleBtn) {
-        themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
-      }
+      themeToggleBtns.forEach(btn => {
+        btn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        btn.setAttribute('title', 'Switch to Dark Mode');
+      });
     }
     localStorage.setItem('childcare_theme', theme);
   }
@@ -62,22 +64,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedDir = localStorage.getItem('childcare_dir') || 'ltr';
   applyDirection(savedDir);
 
-  rtlToggleBtn?.addEventListener('click', () => {
-    const currentDir = htmlTag.getAttribute('dir') || 'ltr';
-    const nextDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
-    applyDirection(nextDir);
+  rtlToggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const currentDir = htmlTag.getAttribute('dir') || 'ltr';
+      const nextDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+      applyDirection(nextDir);
+    });
   });
 
   function applyDirection(dir) {
     htmlTag.setAttribute('dir', dir);
     if (dir === 'rtl') {
       bodyTag.classList.add('rtl-mode');
-      if (rtlLabel) rtlLabel.textContent = 'LTR';
-      rtlToggleBtn?.setAttribute('title', 'Switch to LTR Mode');
+      rtlLabels.forEach(label => label.textContent = 'LTR');
+      rtlToggleBtns.forEach(btn => btn.setAttribute('title', 'Switch to LTR Mode'));
     } else {
       bodyTag.classList.remove('rtl-mode');
-      if (rtlLabel) rtlLabel.textContent = 'RTL';
-      rtlToggleBtn?.setAttribute('title', 'Switch to RTL Mode');
+      rtlLabels.forEach(label => label.textContent = 'RTL');
+      rtlToggleBtns.forEach(btn => btn.setAttribute('title', 'Switch to RTL Mode'));
     }
     localStorage.setItem('childcare_dir', dir);
   }
@@ -97,7 +101,15 @@ document.addEventListener('DOMContentLoaded', () => {
     bodyTag.style.overflow = '';
   }
 
-  loginBtn?.addEventListener('click', openModal);
+  loginBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      if (loginModal) {
+        e.preventDefault();
+        openModal();
+      }
+    });
+  });
+
   closeModalBtn?.addEventListener('click', closeModal);
 
   // Close modal when clicking overlay backdrop
@@ -156,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Close mobile menu on clicking any navigation link
+  // Close mobile menu on clicking navigation links (excluding utility buttons)
   const navLinks = document.querySelectorAll('.nav-menu .nav-link, .dropdown-menu a');
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -172,13 +184,9 @@ document.addEventListener('DOMContentLoaded', () => {
      -------------------------------------------------------------------------- */
   const currentPath = window.location.pathname.toLowerCase();
   const currentHomeText = document.getElementById('current-home-text');
-  const badgeHome1 = document.getElementById('badge-home1');
-  const badgeHome2 = document.getElementById('badge-home2');
 
   if (currentPath.includes('home2.html')) {
     if (currentHomeText) currentHomeText.textContent = 'Home 2';
-  } else if (currentPath.includes('about.html') || currentPath.includes('philosophy.html') || currentPath.includes('programs.html') || currentPath.includes('teachers.html') || currentPath.includes('pricing.html') || currentPath.includes('contact.html')) {
-    if (currentHomeText) currentHomeText.textContent = 'Home Pages';
   } else {
     if (currentHomeText) currentHomeText.textContent = 'Home 1';
   }

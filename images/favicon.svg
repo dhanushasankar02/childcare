@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="50%" stop-color="#FF9F43" />
+      <stop offset="100%" stop-color="#FECA57" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background Rounded Box -->
+  <rect x="16" y="16" width="480" height="480" rx="120" fill="url(#bgGrad)" />
+  
+  <!-- Reaching Child Symbol -->
+  <g fill="#FFFFFF" filter="url(#shadow)">
+    <!-- Child Head -->
+    <circle cx="256" cy="140" r="48"/>
+    <!-- Body and Raised Arms -->
+    <path d="M 256,200 C 220,200 180,225 150,260 C 138,274 152,295 168,285 C 190,270 218,255 240,250 L 240,360 L 210,440 C 204,455 224,470 236,455 L 256,400 L 276,455 C 288,470 308,455 302,440 L 272,360 L 272,250 C 294,255 322,270 344,285 C 360,295 374,274 362,260 C 332,225 292,200 256,200 Z" />
+  </g>
+
+  <!-- Glowing Star -->
+  <path d="M 390,90 L 402,120 L 434,124 L 410,146 L 417,178 L 390,161 L 363,178 L 370,146 L 346,124 L 378,120 Z" fill="#FFFFFF" />
+</svg>
