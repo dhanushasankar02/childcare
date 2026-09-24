@@ -1659,9 +1659,10 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
-  z-index: 2000;
+  background-color: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 999999 !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9194,26 +9195,57 @@ p, h1, h2, h3, h4, h5, h6, span, label, a, button, input, select, textarea {
   }
 
   .mobile-actions-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-    flex-wrap: wrap;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    padding: 4px 0 !important;
+  }
+
+  .mobile-actions-wrapper .icon-btn,
+  .mobile-actions-wrapper .rtl-toggle-btn,
+  .mobile-actions-wrapper .btn-login {
+    position: static !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobile-actions-wrapper .icon-btn {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .mobile-actions-wrapper .rtl-toggle-btn {
+    width: auto !important;
+    height: 42px !important;
+    padding: 0 16px !important;
+    border-radius: 50px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    font-size: 0.85rem !important;
+    font-weight: 800 !important;
   }
 
   .mobile-actions-wrapper .btn-login {
-    display: flex !important;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    border-radius: var(--radius-full, 50px);
+    height: 42px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 0 20px !important;
+    border-radius: 50px !important;
   }
 
-  .mobile-actions-wrapper .btn-login span {
-    display: inline-block !important;
-  }
-
+  .mobile-actions-wrapper .btn-login span,
   .mobile-actions-wrapper .rtl-toggle-btn .rtl-label {
     display: inline-block !important;
   }
@@ -9281,12 +9313,24 @@ p, h1, h2, h3, h4, h5, h6, span, label, a, button, input, select, textarea {
   .cnt-helpdesk-grid,
   .cnt-faq-split,
   .price-inclusive-grid,
+  .price-inclusive-open-grid,
   .price-subsidies-split,
   .price-calc-split,
   .prog-infant-split,
   .prog-therapy-grid,
   .abt-values-grid,
   .philo-pillars-grid,
+  .abt-pillars-grid,
+  .abt-philosophy-split,
+  .abt-arch-top-split,
+  .abt-inclusion-split,
+  .abt-community-grid,
+  .about-fluid-grid,
+  .secondary-reviews-row,
+  .reviews-grid,
+  .abt-reviews-grid,
+  .abt-facility-grid,
+  .abt-nutrition-grid,
   .features-grid,
   .programs-grid,
   .teachers-grid,
@@ -9379,30 +9423,116 @@ p, h1, h2, h3, h4, h5, h6, span, label, a, button, input, select, textarea {
   .cnt-dept-grid,
   .cnt-events-grid,
   .price-plans-grid,
-  .teach-faculty-grid {
+  .teach-faculty-grid,
+  .philo-pillars-grid,
+  .abt-pillars-grid,
+  .abt-philosophy-split,
+  .abt-arch-top-split,
+  .abt-inclusion-split,
+  .abt-community-grid,
+  .price-inclusive-open-grid,
+  .about-fluid-grid,
+  .secondary-reviews-row,
+  .reviews-grid,
+  .abt-reviews-grid,
+  .abt-facility-grid,
+  .abt-nutrition-grid,
+  .features-grid,
+  .abt-values-grid {
     grid-template-columns: 1fr !important;
-    gap: 24px;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 24px !important;
+  }
+
+  .abt-inc-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+
+  .inc-chip {
+    margin-bottom: 6px !important;
+    display: inline-flex !important;
+    width: fit-content !important;
+  }
+
+  .philo-pillar-card,
+  .abt-pillar-card,
+  .pillar-card,
+  .feature-card,
+  .abt-value-card,
+  .review-card,
+  .secondary-review-card,
+  .parent-review-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    word-wrap: break-word !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    padding: 24px 20px !important;
+  }
+
+  .philo-pillar-card h3,
+  .abt-pillar-card h3,
+  .pillar-card h3,
+  .feature-card h3 {
+    font-size: 1.25rem !important;
+    line-height: 1.35 !important;
+    word-break: normal !important;
+    hyphens: manual !important;
+  }
+
+  .philo-pillar-badge,
+  .feature-tag,
+  .badge-pill,
+  .card-tag {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    margin-bottom: 12px !important;
+    display: inline-flex !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: normal !important;
   }
 
   .cnt-float-badge,
   .cnt-chat-bubble,
   .cnt-map-badge,
-  .cnt-faq-badge {
+  .cnt-faq-badge,
+  .hero-float-card,
+  .abt-float-card,
+  .philo-float-badge,
+  .facility-badge,
+  .kitchen-badge,
+  .float-card,
+  .badge-top,
+  .badge-bottom {
     position: relative !important;
     top: auto !important;
     bottom: auto !important;
     left: auto !important;
     right: auto !important;
-    margin-top: 14px;
-    width: 100%;
-    justify-content: center;
+    margin: 12px auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+    width: 100% !important;
   }
 
   .cnt-hero-frame img,
   .cnt-map-frame img,
   .cnt-helpdesk-frame img,
-  .cnt-faq-frame img {
+  .cnt-faq-frame img,
+  .facility-image-box img,
+  .kitchen-image-box img {
     height: 280px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
   }
 }
 
@@ -9479,6 +9609,30 @@ p, h1, h2, h3, h4, h5, h6, span, label, a, button, input, select, textarea {
   .cnt-helpdesk-frame img,
   .cnt-faq-frame img {
     height: 220px !important;
+  }
+
+  .philo-pillar-card,
+  .abt-pillar-card,
+  .pillar-card,
+  .feature-card,
+  .abt-value-card {
+    padding: 20px 16px !important;
+  }
+
+  .philo-pillar-card h3,
+  .abt-pillar-card h3,
+  .pillar-card h3,
+  .feature-card h3 {
+    font-size: 1.15rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .philo-pillar-badge,
+  .feature-tag,
+  .badge-pill,
+  .card-tag {
+    font-size: 0.78rem !important;
+    padding: 4px 10px !important;
   }
 }
 

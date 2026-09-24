@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const rtlLabels = document.querySelectorAll('.rtl-label, #rtl-label');
 
   // Login Modal Elements
-  const loginBtns = document.querySelectorAll('.login-btn, #login-btn');
+  const loginBtns = document.querySelectorAll('.login-btn, .btn-login, #login-btn');
   const loginModal = document.getElementById('login-modal');
   const closeModalBtn = document.getElementById('close-modal-btn');
   const parentTab = document.getElementById('tab-parent');
