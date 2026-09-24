@@ -16,12 +16,14 @@
   
   --bg-main: #FAFBFC;
   --bg-card: #FFFFFF;
+  --bg-light: #FAF9F6;
   --bg-navbar: rgba(255, 255, 255, 0.95);
   --bg-footer: #1E272C;
   --bg-modal: #FFFFFF;
   --bg-input: #F1F5F9;
 
   --text-main: #2D3436;
+  --text-dark: #2D3436;
   --text-muted: #636E72;
   --text-inverse: #FFFFFF;
   --footer-text: #B2BEC3;
@@ -45,12 +47,14 @@
 [data-theme="dark"] {
   --bg-main: #0F172A;
   --bg-card: #1E293B;
+  --bg-light: #0F172A;
   --bg-navbar: rgba(30, 41, 59, 0.95);
   --bg-footer: #0B1120;
   --bg-modal: #1E293B;
   --bg-input: #334155;
 
   --text-main: #F8FAFC;
+  --text-dark: #F8FAFC;
   --text-muted: #94A3B8;
   --text-inverse: #0F172A;
   --footer-text: #94A3B8;
@@ -518,6 +522,50 @@ button {
   gap: 16px;
   flex-wrap: wrap;
   margin-bottom: 42px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-full, 50px);
+  background: linear-gradient(135deg, var(--primary, #FF6B6B), #FF8E8E);
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(255, 107, 107, 0.35);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 107, 107, 0.5);
+  color: #ffffff !important;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-full, 50px);
+  background: var(--bg-input, #F1F5F9);
+  color: var(--text-dark, #2D3436);
+  font-weight: 800;
+  font-size: 0.88rem;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color, #E2E8F0);
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-secondary:hover {
+  background: var(--primary, #FF6B6B);
+  color: #ffffff !important;
+  border-color: var(--primary, #FF6B6B);
+  transform: translateY(-2px);
 }
 
 .glow-btn {
@@ -8446,13 +8494,25 @@ body.dark-theme .ab-nutri-floating-pill {
 .cnt-field-group textarea {
   width: 100%;
   padding: 12px 16px;
-  border: 2px solid #E2E8F0;
+  border: 2px solid var(--border-color, #E2E8F0);
   border-radius: 12px;
   font-size: 0.95rem;
   font-family: inherit;
   background: var(--bg-input, #ffffff);
   color: var(--text-dark, #2D3436);
   transition: all 0.3s ease;
+}
+
+.cnt-field-group input::placeholder,
+.cnt-field-group select::placeholder,
+.cnt-field-group textarea::placeholder {
+  color: var(--text-muted, #94A3B8);
+  opacity: 0.85;
+}
+
+.cnt-field-group select option {
+  background-color: var(--bg-card, #ffffff);
+  color: var(--text-dark, #2D3436);
 }
 
 .cnt-field-group input:focus,
@@ -8531,7 +8591,7 @@ body.dark-theme .ab-nutri-floating-pill {
 
 /* MAP & ACCESS SECTION */
 .cnt-map-section {
-  background: #ffffff;
+  background: var(--bg-main, #ffffff);
 }
 
 .cnt-map-grid {
@@ -8597,7 +8657,7 @@ body.dark-theme .ab-nutri-floating-pill {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-  border: 4px solid #ffffff;
+  border: 4px solid var(--border-color, #ffffff);
 }
 
 .cnt-map-frame img {
@@ -8698,7 +8758,7 @@ body.dark-theme .ab-nutri-floating-pill {
   flex-direction: column;
   gap: 8px;
   padding-top: 14px;
-  border-top: 1px dashed #E2E8F0;
+  border-top: 1px dashed var(--border-color, #E2E8F0);
   font-size: 0.85rem;
   color: var(--text-dark, #2D3436);
   font-weight: 700;
@@ -8717,7 +8777,7 @@ body.dark-theme .ab-nutri-floating-pill {
 
 /* HELPDESK & LIVE CHAT */
 .cnt-helpdesk-section {
-  background: #ffffff;
+  background: var(--bg-main, #ffffff);
 }
 
 .cnt-helpdesk-grid {
@@ -8736,7 +8796,7 @@ body.dark-theme .ab-nutri-floating-pill {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-  border: 4px solid #ffffff;
+  border: 4px solid var(--border-color, #ffffff);
 }
 
 .cnt-helpdesk-frame img {
@@ -8780,6 +8840,13 @@ body.dark-theme .ab-nutri-floating-pill {
   font-weight: 900;
   color: var(--text-dark, #2D3436);
   margin: 12px 0 16px 0;
+}
+
+.cnt-map-info-col > p,
+.cnt-helpdesk-text > p {
+  color: var(--text-muted, #636E72);
+  font-size: 1.02rem;
+  line-height: 1.6;
 }
 
 .cnt-helpdesk-list {
@@ -8833,6 +8900,10 @@ body.dark-theme .ab-nutri-floating-pill {
   color: var(--text-muted, #636E72);
   margin: 0;
   line-height: 1.5;
+}
+
+.cnt-helpdesk-item p strong {
+  color: var(--text-dark, #2D3436);
 }
 
 /* FAQ SECTION */
@@ -8900,7 +8971,7 @@ body.dark-theme .ab-nutri-floating-pill {
 .cnt-faq-answer {
   padding-top: 14px;
   margin-top: 12px;
-  border-top: 1px dashed #E2E8F0;
+  border-top: 1px dashed var(--border-color, #E2E8F0);
   color: var(--text-muted, #636E72);
   font-size: 0.92rem;
   line-height: 1.6;
@@ -8919,7 +8990,7 @@ body.dark-theme .ab-nutri-floating-pill {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-  border: 4px solid #ffffff;
+  border: 4px solid var(--border-color, #ffffff);
 }
 
 .cnt-faq-frame img {
@@ -8951,7 +9022,7 @@ body.dark-theme .ab-nutri-floating-pill {
 
 /* VISITOR EVENTS SECTION */
 .cnt-events-section {
-  background: #ffffff;
+  background: var(--bg-main, #ffffff);
 }
 
 .cnt-events-grid {
@@ -9052,6 +9123,96 @@ body.dark-theme .ab-nutri-floating-pill {
 
 .cnt-event-meta i {
   color: var(--secondary, #48DBFB);
+}
+
+/* ==========================================================================
+   DARK MODE OVERRIDES FOR CONTACT PAGE (.cnt-)
+   ========================================================================== */
+[data-theme="dark"] .cnt-tour-section,
+[data-theme="dark"] .cnt-dept-section,
+[data-theme="dark"] .cnt-faq-section {
+  background-color: var(--bg-light);
+}
+
+[data-theme="dark"] .cnt-map-section,
+[data-theme="dark"] .cnt-helpdesk-section,
+[data-theme="dark"] .cnt-events-section {
+  background-color: var(--bg-main);
+}
+
+[data-theme="dark"] .cnt-tour-form-box,
+[data-theme="dark"] .cnt-tour-bullets,
+[data-theme="dark"] .cnt-dept-card,
+[data-theme="dark"] .cnt-chat-bubble,
+[data-theme="dark"] .cnt-faq-item,
+[data-theme="dark"] .cnt-event-card,
+[data-theme="dark"] .cnt-map-badge,
+[data-theme="dark"] .cnt-faq-badge {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .cnt-field-group input,
+[data-theme="dark"] .cnt-field-group select,
+[data-theme="dark"] .cnt-field-group textarea {
+  background-color: var(--bg-input);
+  color: var(--text-dark);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .cnt-field-group input::placeholder,
+[data-theme="dark"] .cnt-field-group select::placeholder,
+[data-theme="dark"] .cnt-field-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .cnt-field-group select option {
+  background-color: var(--bg-card);
+  color: var(--text-dark);
+}
+
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+[data-theme="dark"] .cnt-dept-contact,
+[data-theme="dark"] .cnt-faq-answer {
+  border-top-color: var(--border-color);
+}
+
+[data-theme="dark"] .cnt-faq-frame,
+[data-theme="dark"] .cnt-map-frame,
+[data-theme="dark"] .cnt-helpdesk-frame {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .cnt-bullet-item,
+[data-theme="dark"] .cnt-dir-item strong,
+[data-theme="dark"] .cnt-dept-header h3,
+[data-theme="dark"] .cnt-helpdesk-item h4,
+[data-theme="dark"] .cnt-faq-item summary,
+[data-theme="dark"] .cnt-event-content h3,
+[data-theme="dark"] .cnt-event-meta,
+[data-theme="dark"] .cnt-map-info-col h2,
+[data-theme="dark"] .cnt-helpdesk-text h2 {
+  color: var(--text-dark);
+}
+
+[data-theme="dark"] .cnt-dir-item p,
+[data-theme="dark"] .cnt-dept-header span,
+[data-theme="dark"] .cnt-dept-card p,
+[data-theme="dark"] .cnt-helpdesk-item p,
+[data-theme="dark"] .cnt-faq-answer,
+[data-theme="dark"] .cnt-faq-item summary .cnt-arrow,
+[data-theme="dark"] .cnt-event-content p,
+[data-theme="dark"] .cnt-map-info-col > p,
+[data-theme="dark"] .cnt-helpdesk-text > p {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .cnt-helpdesk-item p strong {
+  color: var(--text-dark);
 }
 
 /* RESPONSIVE MEDIA QUERIES FOR CONTACT PAGE */
